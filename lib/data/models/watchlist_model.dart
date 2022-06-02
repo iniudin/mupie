@@ -27,20 +27,12 @@ class WatchlistModel extends Equatable {
         isMovie: json["isMovie"],
       );
 
-  factory WatchlistModel.fromMovieEntity(MovieDetail movie) => WatchlistModel(
-        id: movie.id,
-        title: movie.title,
-        posterPath: movie.posterPath,
-        overview: movie.overview,
-        isMovie: 1,
-      );
-
-  factory WatchlistModel.fromTvEntity(TvDetail tv) => WatchlistModel(
-        id: tv.id,
-        title: tv.title,
-        posterPath: tv.posterPath,
-        overview: tv.overview,
-        isMovie: 0,
+  factory WatchlistModel.fromEntity(Watchlist watchlist) => WatchlistModel(
+        id: watchlist.id,
+        title: watchlist.title,
+        posterPath: watchlist.posterPath,
+        overview: watchlist.overview,
+        isMovie: watchlist.isMovie,
       );
 
   Map<String, dynamic> toJson() => {
