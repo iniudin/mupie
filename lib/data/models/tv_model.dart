@@ -1,4 +1,4 @@
-import 'package:ditonton/domain/entities/movie.dart';
+import 'package:ditonton/domain/entities/tv.dart';
 import 'package:equatable/equatable.dart';
 
 class TvModel extends Equatable {
@@ -64,8 +64,8 @@ class TvModel extends Equatable {
         "vote_count": voteCount,
       };
 
-  Movie toEntity() {
-    return Movie(
+  Tv toEntity() {
+    return Tv(
       adult: this.adult,
       backdropPath: this.backdropPath,
       genreIds: this.genreIds,

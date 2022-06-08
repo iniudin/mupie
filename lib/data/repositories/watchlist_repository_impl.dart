@@ -22,7 +22,7 @@ class WatchlistRepositoryImpl implements WatchlistRepository {
   }
 
   @override
-  Future<Either<Failure, int>> removeMovie(Watchlist watchlist) async {
+  Future<Either<Failure, int>> remove(Watchlist watchlist) async {
     try {
       final result = await localDataSource
           .removeWatchlist(WatchlistModel.fromEntity(watchlist));
@@ -33,7 +33,7 @@ class WatchlistRepositoryImpl implements WatchlistRepository {
   }
 
   @override
-  Future<Either<Failure, int>> saveMovie(Watchlist watchlist) async {
+  Future<Either<Failure, int>> save(Watchlist watchlist) async {
     try {
       final result = await localDataSource
           .insertWatchlist(WatchlistModel.fromEntity(watchlist));

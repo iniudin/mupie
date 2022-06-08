@@ -1,5 +1,6 @@
 import 'package:ditonton/data/models/genre_model.dart';
 import 'package:ditonton/domain/entities/movie_detail.dart';
+import 'package:ditonton/domain/entities/tv_detail.dart';
 import 'package:equatable/equatable.dart';
 
 class TvDetailResponse extends Equatable {
@@ -99,8 +100,8 @@ class TvDetailResponse extends Equatable {
         "vote_count": voteCount,
       };
 
-  MovieDetail toEntity() {
-    return MovieDetail(
+  TvDetail toEntity() {
+    return TvDetail(
       adult: this.adult,
       backdropPath: this.backdropPath,
       genres: this.genres.map((genre) => genre.toEntity()).toList(),
