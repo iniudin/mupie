@@ -3,7 +3,7 @@ import 'package:ditonton/data/models/tv_model.dart';
 import 'package:ditonton/data/services/tv_service.dart';
 
 abstract class TvRemoteDataSource {
-  Future<List<TvModel>> getNowPlaying();
+  Future<List<TvModel>> onTheAir();
   Future<TvDetailResponse> getDetail(int id);
   Future<List<TvModel>> getRecommendations(int id);
   Future<List<TvModel>> getPopular();
@@ -18,31 +18,31 @@ class TvRemoteDataSourceImpl implements TvRemoteDataSource {
 
   @override
   Future<TvDetailResponse> getDetail(int id) async {
-    return await this.tvService.getDetail(id);
+    return await tvService.getDetail(id);
   }
 
   @override
-  Future<List<TvModel>> getNowPlaying() async {
-    return await this.tvService.getNowPlaying();
+  Future<List<TvModel>> onTheAir() async {
+    return await tvService.onTheAir();
   }
 
   @override
   Future<List<TvModel>> getPopular() async {
-    return await this.tvService.getPopular();
+    return await tvService.getPopular();
   }
 
   @override
   Future<List<TvModel>> getRecommendations(int id) async {
-    return await this.tvService.getRecommendations(id);
+    return await tvService.getRecommendations(id);
   }
 
   @override
   Future<List<TvModel>> getTopRated() async {
-    return await this.tvService.getTopRated();
+    return await tvService.getTopRated();
   }
 
   @override
   Future<List<TvModel>> search(String query) async {
-    return await this.tvService.search(query);
+    return await tvService.search(query);
   }
 }

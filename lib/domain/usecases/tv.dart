@@ -8,8 +8,8 @@ class TvUsecase {
 
   TvUsecase(this.tvRepository);
 
-  Future<Either<Failure, List<Tv>>> getNowPlaying() {
-    return tvRepository.getNowPlaying();
+  Future<Either<Failure, List<Tv>>> onTheAir() {
+    return tvRepository.onTheAir();
   }
 
   Future<Either<Failure, List<Tv>>> getPopular() {

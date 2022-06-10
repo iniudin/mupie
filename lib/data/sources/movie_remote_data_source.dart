@@ -18,31 +18,31 @@ class MovieRemoteDataSourceImpl implements MovieRemoteDataSource {
 
   @override
   Future<MovieDetailResponse> getDetail(int id) async {
-    return await this.movieService.getDetail(id);
+    return await movieService.getDetail(id);
   }
 
   @override
   Future<List<MovieModel>> getNowPlaying() async {
-    return await this.movieService.getNowPlaying();
+    return await movieService.getNowPlaying();
   }
 
   @override
   Future<List<MovieModel>> getPopular() async {
-    return await this.movieService.getPopular();
+    return await movieService.getPopular();
   }
 
   @override
   Future<List<MovieModel>> getRecommendations(int id) async {
-    return await this.movieService.getRecommendations(id);
+    return await movieService.getRecommendations(id);
   }
 
   @override
   Future<List<MovieModel>> getTopRated() async {
-    return await this.movieService.getTopRated();
+    return await movieService.getTopRated();
   }
 
   @override
   Future<List<MovieModel>> search(String query) async {
-    return await this.movieService.search(query);
+    return await movieService.search(query);
   }
 }

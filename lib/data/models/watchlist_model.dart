@@ -1,17 +1,14 @@
-import 'package:ditonton/domain/entities/movie.dart';
-import 'package:ditonton/domain/entities/movie_detail.dart';
-import 'package:ditonton/domain/entities/tv_detail.dart';
 import 'package:ditonton/domain/entities/watchlist.dart';
 import 'package:equatable/equatable.dart';
 
 class WatchlistModel extends Equatable {
-  final int? id;
-  final String? title;
-  final String? overview;
-  final String? posterPath;
-  final int? isMovie;
+  final int id;
+  final String title;
+  final String overview;
+  final String posterPath;
+  final int isMovie;
 
-  WatchlistModel({
+  const WatchlistModel({
     required this.id,
     required this.title,
     required this.overview,

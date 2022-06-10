@@ -1,7 +1,5 @@
-import 'package:ditonton/common/exception.dart';
 import 'package:ditonton/data/models/watchlist_model.dart';
 import 'package:ditonton/data/services/database_service.dart';
-import 'package:ditonton/domain/entities/watchlist.dart';
 
 abstract class WatchlistLocalDataSource {
   Future<int> insertWatchlist(WatchlistModel watchlistModel);

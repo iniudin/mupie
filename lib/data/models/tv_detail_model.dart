@@ -1,10 +1,9 @@
 import 'package:ditonton/data/models/genre_model.dart';
-import 'package:ditonton/domain/entities/movie_detail.dart';
 import 'package:ditonton/domain/entities/tv_detail.dart';
 import 'package:equatable/equatable.dart';
 
 class TvDetailResponse extends Equatable {
-  TvDetailResponse({
+  const TvDetailResponse({
     required this.adult,
     required this.backdropPath,
     required this.budget,
@@ -29,12 +28,12 @@ class TvDetailResponse extends Equatable {
   });
 
   final bool adult;
-  final String? backdropPath;
+  final String backdropPath;
   final int budget;
   final List<GenreModel> genres;
   final String homepage;
   final int id;
-  final String? imdbId;
+  final String imdbId;
   final String originalLanguage;
   final String originalTitle;
   final String overview;
@@ -102,23 +101,23 @@ class TvDetailResponse extends Equatable {
 
   TvDetail toEntity() {
     return TvDetail(
-      adult: this.adult,
-      backdropPath: this.backdropPath,
-      genres: this.genres.map((genre) => genre.toEntity()).toList(),
-      id: this.id,
-      originalTitle: this.originalTitle,
-      overview: this.overview,
-      posterPath: this.posterPath,
-      releaseDate: this.releaseDate,
-      runtime: this.runtime,
-      title: this.title,
-      voteAverage: this.voteAverage,
-      voteCount: this.voteCount,
+      adult: adult,
+      backdropPath: backdropPath,
+      genres: genres.map((genre) => genre.toEntity()).toList(),
+      id: id,
+      originalTitle: originalTitle,
+      overview: overview,
+      posterPath: posterPath,
+      releaseDate: releaseDate,
+      runtime: runtime,
+      title: title,
+      voteAverage: voteAverage,
+      voteCount: voteCount,
     );
   }
 
   @override
-  List<Object?> get props => [
+  List<Object> get props => [
         adult,
         backdropPath,
         budget,

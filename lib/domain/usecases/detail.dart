@@ -36,7 +36,7 @@ class DetailUsecase {
     return tvRepository.getRecommendations(id);
   }
 
-  Future<Either<Failure, bool>> isWatchlisted(int id, isMovie) {
+  Future<Either<Failure, bool>> isWatchlisted(int id, int isMovie) {
     return watchlistRepository.isWatchlisted(id, isMovie);
   }
 
