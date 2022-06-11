@@ -1,9 +1,9 @@
 import 'package:cached_network_image/cached_network_image.dart';
 import 'package:ditonton/common/constants.dart';
 import 'package:ditonton/domain/entities/tv.dart';
-import 'package:ditonton/presentation/blocs/tv/on_the_air/on_the_air_bloc.dart';
 import 'package:ditonton/presentation/blocs/tv/popular/popular_bloc.dart';
 import 'package:ditonton/presentation/blocs/tv/top_rated/top_rated_bloc.dart';
+import 'package:ditonton/presentation/blocs/tv/on_the_air/on_the_air_bloc.dart';
 import 'package:ditonton/utils/route/route_helper.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
@@ -21,11 +21,7 @@ class _TvPageState extends State<TvPage> {
     super.initState();
     Future.microtask(() {
       context.read<TvOnTheAirBloc>().add(const GetOnTheAir());
-    });
-    Future.microtask(() {
       context.read<TvTopRatedBloc>().add(const GetTopRated());
-    });
-    Future.microtask(() {
       context.read<TvPopularBloc>().add(const GetPopular());
     });
   }

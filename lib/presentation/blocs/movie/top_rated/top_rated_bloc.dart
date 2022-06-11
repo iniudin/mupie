@@ -10,7 +10,7 @@ class MovieTopRatedBloc extends Bloc<MovieTopRatedEvent, MovieTopRatedState> {
   final MovieUsecase usecase;
 
   MovieTopRatedBloc({required this.usecase}) : super(MovieTopRatedInitial()) {
-    on<GetTopRated>((event, emit) async {
+    on<GetMovieTopRated>((event, emit) async {
       emit(MovieTopRatedLoading());
 
       final result = await usecase.getTopRated();

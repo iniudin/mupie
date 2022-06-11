@@ -1,5 +1,5 @@
 import 'package:ditonton/common/constants.dart';
-import 'package:ditonton/presentation/blocs/Tv/top_rated/top_rated_bloc.dart';
+import 'package:ditonton/presentation/blocs/tv/top_rated/top_rated_bloc.dart';
 import 'package:ditonton/presentation/blocs/home/home_index_cubit.dart';
 import 'package:ditonton/presentation/blocs/movie/on_playing/on_playing_bloc.dart';
 import 'package:ditonton/presentation/blocs/movie/popular/popular_bloc.dart';

@@ -17,7 +17,6 @@ class TvService {
   Future<List<TvModel>> onTheAir() async {
     final response =
         await _client.get(Uri.parse('$_baseUrl/tv/on_the_air?$_apiKey'));
-
     if (response.statusCode == 200) {
       return TvResponse.fromJson(json.decode(response.body)).tvList;
     } else {

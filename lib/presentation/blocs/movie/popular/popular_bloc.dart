@@ -10,7 +10,7 @@ class MoviePopularBloc extends Bloc<MoviePopularEvent, MoviePopularState> {
   final MovieUsecase usecase;
 
   MoviePopularBloc({required this.usecase}) : super(MoviePopularInitial()) {
-    on<GetPopular>((event, emit) async {
+    on<GetMoviePopular>((event, emit) async {
       emit(MoviePopularLoading());
 
       final result = await usecase.getPopular();

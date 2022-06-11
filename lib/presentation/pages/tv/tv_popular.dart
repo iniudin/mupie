@@ -1,4 +1,4 @@
-import 'package:ditonton/presentation/blocs/Tv/popular/popular_bloc.dart';
+import 'package:ditonton/presentation/blocs/tv/popular/popular_bloc.dart';
 import 'package:ditonton/presentation/widgets/item_card.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';

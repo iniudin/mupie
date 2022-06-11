@@ -62,7 +62,9 @@ class ItemCard extends StatelessWidget {
               child: ClipRRect(
                 borderRadius: const BorderRadius.all(Radius.circular(8)),
                 child: CachedNetworkImage(
-                  imageUrl: '$baseImageUrl$posterPath',
+                  imageUrl: posterPath != " "
+                      ? '$baseImageUrl$posterPath'
+                      : "https://www.publicdomainpictures.net/pictures/280000/velka/not-found-image-15383864787lu.jpg",
                   width: 80,
                   placeholder: (context, url) => const Center(
                     child: CircularProgressIndicator(),

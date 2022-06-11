@@ -11,7 +11,7 @@ class MovieOnPlayingBloc
   final MovieUsecase usecase;
 
   MovieOnPlayingBloc({required this.usecase}) : super(MovieOnPlayingInitial()) {
-    on<GetNowPlaying>((event, emit) async {
+    on<GetMovieNowPlaying>((event, emit) async {
       emit(MovieOnPlayingLoading());
 
       final result = await usecase.getNowPlaying();

@@ -7,6 +7,6 @@ abstract class MoviePopularEvent extends Equatable {
   List<Object> get props => [];
 }
 
-class GetPopular extends MoviePopularEvent {
-  const GetPopular();
+class GetMoviePopular extends MoviePopularEvent {
+  const GetMoviePopular();
 }

@@ -20,13 +20,9 @@ class _MoviePageState extends State<MoviePage> {
   void initState() {
     super.initState();
     Future.microtask(() {
-      context.read<MovieOnPlayingBloc>().add(const GetNowPlaying());
-    });
-    Future.microtask(() {
-      context.read<MovieTopRatedBloc>().add(const GetTopRated());
-    });
-    Future.microtask(() {
-      context.read<MoviePopularBloc>().add(const GetPopular());
+      context.read<MovieOnPlayingBloc>().add(const GetMovieNowPlaying());
+      context.read<MovieTopRatedBloc>().add(const GetMovieTopRated());
+      context.read<MoviePopularBloc>().add(const GetMoviePopular());
     });
   }
 

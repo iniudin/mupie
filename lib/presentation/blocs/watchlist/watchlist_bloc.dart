@@ -6,9 +6,9 @@ import 'package:equatable/equatable.dart';
 part 'watchlist_event.dart';
 part 'watchlist_state.dart';
 
-class MovieBloc extends Bloc<WatchlistEvent, WatchlistState> {
+class WatchlistBloc extends Bloc<WatchlistEvent, WatchlistState> {
   final WatchlistUsecase usecase;
-  MovieBloc({required this.usecase}) : super(WatchlistInitial()) {
+  WatchlistBloc({required this.usecase}) : super(WatchlistInitial()) {
     on<GetWatchlist>((event, emit) async {
       emit(WatchlistLoading());
 
