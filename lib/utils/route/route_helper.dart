@@ -1,10 +1,13 @@
 import 'package:ditonton/domain/entities/content_arguments.dart';
-import 'package:ditonton/presentation/pages/detail_page.dart';
+import 'package:ditonton/domain/entities/search_arguments.dart';
+import 'package:ditonton/presentation/pages/movie_detail_page.dart';
 import 'package:ditonton/presentation/pages/home_page.dart';
 import 'package:ditonton/presentation/pages/movie/movie_popular.dart';
 import 'package:ditonton/presentation/pages/movie/movie_top_rated.dart';
+import 'package:ditonton/presentation/pages/search_page.dart';
 import 'package:ditonton/presentation/pages/tv/tv_popular.dart';
 import 'package:ditonton/presentation/pages/tv/tv_top_rated.dart';
+import 'package:ditonton/presentation/pages/tv_detail_page.dart';
 import 'package:ditonton/presentation/pages/unknown_page.dart';
 import 'package:flutter/material.dart';
 
@@ -41,10 +44,26 @@ class RouteHelper {
           builder: (_) => const TvPopularPage(),
           settings: settings,
         );
-      case detailRoute:
+      case movieDetailRoute:
         if (arguments is ContentArguments) {
           return MaterialPageRoute(
-            builder: (_) => DetailPage(arguments: arguments),
+            builder: (_) => MovieDetailPage(arguments: arguments),
+            settings: settings,
+          );
+        }
+        return MaterialPageRoute(builder: (_) => const UnknownPage());
+      case tvdetailRoute:
+        if (arguments is ContentArguments) {
+          return MaterialPageRoute(
+            builder: (_) => TvDetailPage(arguments: arguments),
+            settings: settings,
+          );
+        }
+        return MaterialPageRoute(builder: (_) => const UnknownPage());
+      case searchRoute:
+        if (arguments is SearchArguments) {
+          return MaterialPageRoute(
+            builder: (_) => SearchPage(arguments: arguments),
             settings: settings,
           );
         }

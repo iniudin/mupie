@@ -1,4 +1,4 @@
-import 'package:ditonton/presentation/blocs/tv/top_rated/top_rated_bloc.dart';
+import 'package:ditonton/presentation/blocs/tv_top_rated/tv_top_rated_bloc.dart';
 import 'package:ditonton/presentation/widgets/item_card.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
@@ -34,11 +34,12 @@ class _TvTopRatedPageState extends State<TvTopRatedPage> {
             } else if (state is TvTopRatedLoaded) {
               return ListView.builder(
                 itemBuilder: (context, index) {
-                  final tv = state.tvList[index];
+                  final item = state.tvList[index];
                   return ItemCard(
-                    title: tv.title,
-                    overview: tv.overview,
-                    posterPath: tv.posterPath,
+                    id: item.id,
+                    title: item.title,
+                    overview: item.overview,
+                    posterPath: item.posterPath,
                     isMovie: 0,
                   );
                 },

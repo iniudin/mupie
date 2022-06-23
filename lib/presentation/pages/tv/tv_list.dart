@@ -1,9 +1,8 @@
-import 'package:cached_network_image/cached_network_image.dart';
 import 'package:ditonton/common/constants.dart';
-import 'package:ditonton/domain/entities/tv.dart';
-import 'package:ditonton/presentation/blocs/tv/popular/popular_bloc.dart';
-import 'package:ditonton/presentation/blocs/tv/top_rated/top_rated_bloc.dart';
-import 'package:ditonton/presentation/blocs/tv/on_the_air/on_the_air_bloc.dart';
+import 'package:ditonton/presentation/blocs/tv_on_the_air/tv_on_the_air_bloc.dart';
+import 'package:ditonton/presentation/blocs/tv_popular/tv_popular_bloc.dart';
+import 'package:ditonton/presentation/blocs/tv_top_rated/tv_top_rated_bloc.dart';
+import 'package:ditonton/presentation/widgets/item_list_card.dart';
 import 'package:ditonton/utils/route/route_helper.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
@@ -43,7 +42,23 @@ class _TvPageState extends State<TvPage> {
                 if (state is TvOnTheAirLoading) {
                   return const Center(child: CircularProgressIndicator());
                 } else if (state is TvOnTheAirLoaded) {
-                  return TvList(state.tvList);
+                  return SizedBox(
+                    height: 200,
+                    child: ListView.builder(
+                      scrollDirection: Axis.horizontal,
+                      itemBuilder: (context, index) {
+                        final item = state.tvList[index];
+                        return ItemListCard(
+                          id: item.id,
+                          title: item.title,
+                          overview: item.overview,
+                          posterPath: item.posterPath,
+                          isMovie: 0,
+                        );
+                      },
+                      itemCount: state.tvList.length,
+                    ),
+                  );
                 } else if (state is TvOnTheAirError) {
                   return Center(child: Text(state.message));
                 } else {
@@ -60,7 +75,23 @@ class _TvPageState extends State<TvPage> {
                 if (state is TvPopularLoading) {
                   return const Center(child: CircularProgressIndicator());
                 } else if (state is TvPopularLoaded) {
-                  return TvList(state.tvList);
+                  return SizedBox(
+                    height: 200,
+                    child: ListView.builder(
+                      scrollDirection: Axis.horizontal,
+                      itemBuilder: (context, index) {
+                        final item = state.tvList[index];
+                        return ItemListCard(
+                          id: item.id,
+                          title: item.title,
+                          overview: item.overview,
+                          posterPath: item.posterPath,
+                          isMovie: 0,
+                        );
+                      },
+                      itemCount: state.tvList.length,
+                    ),
+                  );
                 } else if (state is TvPopularError) {
                   return Center(child: Text(state.message));
                 } else {
@@ -77,7 +108,23 @@ class _TvPageState extends State<TvPage> {
                 if (state is TvTopRatedLoading) {
                   return const Center(child: CircularProgressIndicator());
                 } else if (state is TvTopRatedLoaded) {
-                  return TvList(state.tvList);
+                  return SizedBox(
+                    height: 200,
+                    child: ListView.builder(
+                      scrollDirection: Axis.horizontal,
+                      itemBuilder: (context, index) {
+                        final item = state.tvList[index];
+                        return ItemListCard(
+                          id: item.id,
+                          title: item.title,
+                          overview: item.overview,
+                          posterPath: item.posterPath,
+                          isMovie: 0,
+                        );
+                      },
+                      itemCount: state.tvList.length,
+                    ),
+                  );
                 } else if (state is TvTopRatedError) {
                   return Center(child: Text(state.message));
                 } else {
@@ -109,49 +156,6 @@ class _TvPageState extends State<TvPage> {
           ),
         ),
       ],
-    );
-  }
-}
-
-class TvList extends StatelessWidget {
-  final List<Tv> tvList;
-
-  // ignore: use_key_in_widget_constructors
-  const TvList(this.tvList);
-
-  @override
-  Widget build(BuildContext context) {
-    return SizedBox(
-      height: 200,
-      child: ListView.builder(
-        scrollDirection: Axis.horizontal,
-        itemBuilder: (context, index) {
-          final tv = tvList[index];
-          return Container(
-            padding: const EdgeInsets.all(8),
-            child: InkWell(
-              onTap: () {
-                Navigator.pushNamed(
-                  context,
-                  detailRoute,
-                  arguments: tv.id,
-                );
-              },
-              child: ClipRRect(
-                borderRadius: const BorderRadius.all(Radius.circular(16)),
-                child: CachedNetworkImage(
-                  imageUrl: '$baseImageUrl${tv.posterPath}',
-                  placeholder: (context, url) => const Center(
-                    child: CircularProgressIndicator(),
-                  ),
-                  errorWidget: (context, url, error) => const Icon(Icons.error),
-                ),
-              ),
-            ),
-          );
-        },
-        itemCount: tvList.length,
-      ),
     );
   }
 }

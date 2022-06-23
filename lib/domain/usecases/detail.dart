@@ -14,11 +14,11 @@ class DetailUsecase {
   final TvRepository tvRepository;
   final WatchlistRepository watchlistRepository;
 
-  DetailUsecase(
-    this.movieRepository,
-    this.tvRepository,
-    this.watchlistRepository,
-  );
+  DetailUsecase({
+    required this.movieRepository,
+    required this.tvRepository,
+    required this.watchlistRepository,
+  });
 
   Future<Either<Failure, MovieDetail>> getMovieDetail(int id) {
     return movieRepository.getDetail(id);

@@ -6,5 +6,6 @@ const String moviePopularRoute = '/moviePopular';
 const String tvTopRatedRoute = '/tvTopRated';
 const String tvPopularRoute = '/tvPopular';
 const String watchlistRoute = '/watchlist';
-const String detailRoute = '/detail';
+const String movieDetailRoute = '/detail_movie';
+const String tvdetailRoute = '/detail_tv';
 const String searchRoute = '/search';

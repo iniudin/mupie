@@ -9,7 +9,10 @@ class SearchUsecase {
   final MovieRepository movieRepository;
   final TvRepository tvRepository;
 
-  SearchUsecase(this.movieRepository, this.tvRepository);
+  SearchUsecase({
+    required this.movieRepository,
+    required this.tvRepository,
+  });
 
   Future<Either<Failure, List<Movie>>> searchMovie(String query) {
     return movieRepository.search(query);

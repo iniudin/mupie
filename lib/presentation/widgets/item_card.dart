@@ -1,21 +1,24 @@
 import 'package:cached_network_image/cached_network_image.dart';
 import 'package:ditonton/common/constants.dart';
+import 'package:ditonton/domain/entities/content_arguments.dart';
 import 'package:ditonton/utils/route/route_helper.dart';
 import 'package:flutter/material.dart';
 
 class ItemCard extends StatelessWidget {
+  final int id;
   final String title;
   final String overview;
   final String posterPath;
   final int isMovie;
 
-  // ignore: use_key_in_widget_constructors
   const ItemCard({
+    Key? key,
+    required this.id,
     required this.title,
     required this.overview,
     required this.posterPath,
     required this.isMovie,
-  });
+  }) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
@@ -23,7 +26,17 @@ class ItemCard extends StatelessWidget {
       margin: const EdgeInsets.symmetric(vertical: 4),
       child: InkWell(
         onTap: () {
-          Navigator.pushNamed(context, detailRoute);
+          Navigator.pushNamed(
+            context,
+            isMovie == 1 ? movieDetailRoute : tvdetailRoute,
+            arguments: ContentArguments(
+              id: id,
+              title: title,
+              overview: overview,
+              posterPath: posterPath,
+              isMovie: isMovie,
+            ),
+          );
         },
         child: Stack(
           alignment: Alignment.bottomLeft,
@@ -62,14 +75,13 @@ class ItemCard extends StatelessWidget {
               child: ClipRRect(
                 borderRadius: const BorderRadius.all(Radius.circular(8)),
                 child: CachedNetworkImage(
-                  imageUrl: posterPath != " "
-                      ? '$baseImageUrl$posterPath'
-                      : "https://www.publicdomainpictures.net/pictures/280000/velka/not-found-image-15383864787lu.jpg",
+                  imageUrl: '$baseImageUrl$posterPath',
                   width: 80,
                   placeholder: (context, url) => const Center(
                     child: CircularProgressIndicator(),
                   ),
-                  errorWidget: (context, url, error) => const Icon(Icons.error),
+                  errorWidget: (context, url, error) =>
+                      const Center(child: Icon(Icons.error)),
                 ),
               ),
             ),

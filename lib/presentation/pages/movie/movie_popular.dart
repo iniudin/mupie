@@ -1,4 +1,4 @@
-import 'package:ditonton/presentation/blocs/movie/popular/popular_bloc.dart';
+import 'package:ditonton/presentation/blocs/movie_popular/popular_bloc.dart';
 import 'package:ditonton/presentation/widgets/item_card.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
@@ -34,11 +34,12 @@ class _MoviePopularPageState extends State<MoviePopularPage> {
             } else if (state is MoviePopularLoaded) {
               return ListView.builder(
                 itemBuilder: (context, index) {
-                  final movie = state.movieList[index];
+                  final item = state.movieList[index];
                   return ItemCard(
-                    title: movie.title,
-                    overview: movie.overview,
-                    posterPath: movie.posterPath,
+                    id: item.id,
+                    title: item.title,
+                    overview: item.overview,
+                    posterPath: item.posterPath,
                     isMovie: 1,
                   );
                 },

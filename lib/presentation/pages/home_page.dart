@@ -1,9 +1,9 @@
-import 'package:ditonton/presentation/blocs/home/home_index_cubit.dart';
+import 'package:ditonton/domain/entities/search_arguments.dart';
 import 'package:ditonton/presentation/pages/movie/movie_list.dart';
 import 'package:ditonton/presentation/pages/tv/tv_list.dart';
+import 'package:ditonton/presentation/pages/watchlist_page.dart';
 import 'package:ditonton/utils/route/route_helper.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter_bloc/flutter_bloc.dart';
 
 class HomePage extends StatefulWidget {
   const HomePage({Key? key}) : super(key: key);
@@ -13,6 +13,8 @@ class HomePage extends StatefulWidget {
 }
 
 class _HomePageState extends State<HomePage> {
+  final PageController _pageController = PageController(initialPage: 0);
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -30,7 +32,7 @@ class _HomePageState extends State<HomePage> {
               leading: const Icon(Icons.movie),
               title: const Text('Movies'),
               onTap: () {
-                context.read<HomeIndexCubit>().setIndexPage(0);
+                _pageController.jumpToPage(0);
                 Navigator.pop(context);
               },
             ),
@@ -38,7 +40,7 @@ class _HomePageState extends State<HomePage> {
               leading: const Icon(Icons.tv),
               title: const Text('Tv Shows'),
               onTap: () {
-                context.read<HomeIndexCubit>().setIndexPage(1);
+                _pageController.jumpToPage(1);
                 Navigator.pop(context);
               },
             ),
@@ -46,13 +48,13 @@ class _HomePageState extends State<HomePage> {
               leading: const Icon(Icons.save_alt),
               title: const Text('Watchlist'),
               onTap: () {
-                context.read<HomeIndexCubit>().setIndexPage(3);
+                _pageController.jumpToPage(2);
                 Navigator.pop(context);
               },
             ),
             ListTile(
               onTap: () {
-                context.read<HomeIndexCubit>().setIndexPage(4);
+                _pageController.jumpToPage(3);
                 Navigator.pop(context);
               },
               leading: const Icon(Icons.info_outline),
@@ -66,17 +68,25 @@ class _HomePageState extends State<HomePage> {
         actions: [
           IconButton(
             onPressed: () {
-              Navigator.pushNamed(context, searchRoute);
+              Navigator.pushNamed(
+                context,
+                searchRoute,
+                arguments:
+                    SearchArguments(isMovie: _pageController.page == 0 ? 1 : 0),
+              );
             },
             icon: const Icon(Icons.search),
           )
         ],
       ),
-      body: IndexedStack(
-        index: context.watch<HomeIndexCubit>().state,
+      body: PageView(
+        controller: _pageController,
+        scrollDirection: Axis.horizontal,
+        physics: const NeverScrollableScrollPhysics(),
         children: const <Widget>[
           MoviePage(),
           TvPage(),
+          WatchlistPage(),
         ],
       ),
     );
