@@ -22,7 +22,7 @@ class MovieDetailBloc extends Bloc<MovieDetailEvent, MovieDetailState> {
           (error) => emit(MovieDetailError(error.message)),
           (detail) => detail.title.isNotEmpty
               ? emit(MovieDetailLoaded(detail))
-              : emit(const MovieDetailNoData("")),
+              : emit(const MovieDetailNoData("Not found")),
         );
       },
     );

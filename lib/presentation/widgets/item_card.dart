@@ -28,7 +28,7 @@ class ItemCard extends StatelessWidget {
         onTap: () {
           Navigator.pushNamed(
             context,
-            isMovie == 1 ? movieDetailRoute : tvdetailRoute,
+            detailRoute,
             arguments: ContentArguments(
               id: id,
               title: title,

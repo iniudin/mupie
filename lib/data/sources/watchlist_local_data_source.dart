@@ -4,7 +4,7 @@ import 'package:ditonton/data/services/database_service.dart';
 abstract class WatchlistLocalDataSource {
   Future<int> insertWatchlist(WatchlistModel watchlistModel);
   Future<int> removeWatchlist(WatchlistModel watchlistModel);
-  Future<bool> getWatchlistById(int id, isMovie);
+  Future<bool> getWatchlistById(int id, int isMovie);
   Future<List<WatchlistModel>> getAllWatchlist();
 }
 
@@ -19,7 +19,7 @@ class WatchlistLocalDataSourceImpl implements WatchlistLocalDataSource {
   }
 
   @override
-  Future<bool> getWatchlistById(int id, isMovie) async {
+  Future<bool> getWatchlistById(int id, int isMovie) async {
     return await databaseService.findById(id, isMovie);
   }
 

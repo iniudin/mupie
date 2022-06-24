@@ -15,7 +15,7 @@ class _WatchlistPageState extends State<WatchlistPage> {
   void initState() {
     super.initState();
     Future.microtask(() {
-      context.read<WatchlistBloc>().add(const GetWatchlist());
+      context.read<WatchlistBloc>().add(const GetList());
     });
   }
 

@@ -15,63 +15,61 @@ class WatchlistBloc extends Bloc<WatchlistEvent, WatchlistState> {
     required this.detailUsecase,
     required this.watchlistUsecase,
   }) : super(WatchlistInitial()) {
-    on<GetWatchlist>((event, emit) async {
-      emit(WatchlistLoading());
+    on<GetList>(
+      (event, emit) async {
+        emit(WatchlistLoading());
 
-      final result = await watchlistUsecase.getWatchlists();
-      result.fold(
-        (error) => emit(WatchlistError(error.message)),
-        (watchlist) => watchlist.isNotEmpty
-            ? emit(WatchlistLoaded(watchlist))
-            : emit(const WatchlistNoData('')),
-      );
-    });
+        final result = await watchlistUsecase.getWatchlists();
+        result.fold(
+          (error) => emit(WatchlistError(error.message)),
+          (watchlist) => watchlist.isNotEmpty
+              ? emit(WatchlistLoaded(watchlist))
+              : emit(const WatchlistNoData('')),
+        );
+      },
+    );
 
-    on<AddWatchlist>((event, emit) async {
-      final watchlist = event.watchlist;
+    on<StatusWatchlist>(
+      (event, emit) async {
+        final id = event.id;
+        final isMovie = event.isMovie;
 
-      emit(
-        WatchlistLoading(),
-      );
+        emit(WatchlistLoading());
 
-      final result = await detailUsecase.save(watchlist);
-      result.fold(
-        (error) => emit(
-          WatchlistError(error.message),
-        ),
-        (success) => add(IsWatchlist(watchlist)),
-      );
-    });
+        final result = await detailUsecase.isWatchlisted(id, isMovie);
+        result.fold(
+          (error) => emit(WatchlistError(error.message)),
+          (success) => emit(WatchlistStatusLoaded(success)),
+        );
+      },
+    );
 
-    on<RemoveWatchlist>((event, emit) async {
-      final watchlist = event.watchlist;
+    on<AddWatchlist>(
+      (event, emit) async {
+        final watchlist = event.watchlist;
 
-      emit(
-        WatchlistLoading(),
-      );
+        emit(WatchlistLoading());
 
-      final result = await detailUsecase.remove(watchlist);
-      result.fold(
-        (error) => emit(
-          WatchlistError(error.message),
-        ),
-        (success) => add(IsWatchlist(watchlist)),
-      );
-    });
+        final result = await detailUsecase.save(watchlist);
+        result.fold(
+          (error) => emit(WatchlistError(error.message)),
+          (message) => emit(WatchlistSuccess(message)),
+        );
+      },
+    );
 
-    on<IsWatchlist>((event, emit) async {
-      final id = event.watchlist.id;
-      final isMovie = event.watchlist.isMovie;
+    on<RemoveWatchlist>(
+      (event, emit) async {
+        final watchlist = event.watchlist;
 
-      emit(
-        WatchlistLoading(),
-      );
+        emit(WatchlistLoading());
 
-      final result = await detailUsecase.isWatchlisted(id, isMovie);
-      result.fold(
-        (error) => emit(WatchlistError(error.message)),
-        (success) => emit(WatchlistListed(success)),
-      );
-    });
+        final result = await detailUsecase.remove(watchlist);
+        result.fold(
+          (error) => emit(WatchlistError(error.message)),
+          (message) => emit(WatchlistSuccess(message)),
+        );
+      },
+    );
   }
 }

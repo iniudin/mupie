@@ -7,8 +7,8 @@ abstract class WatchlistEvent extends Equatable {
   List<Object> get props => [];
 }
 
-class GetWatchlist extends WatchlistEvent {
-  const GetWatchlist();
+class GetList extends WatchlistEvent {
+  const GetList();
 }
 
 class AddWatchlist extends WatchlistEvent {
@@ -20,13 +20,14 @@ class AddWatchlist extends WatchlistEvent {
   List<Object> get props => [watchlist];
 }
 
-class IsWatchlist extends WatchlistEvent {
-  final Watchlist watchlist;
+class StatusWatchlist extends WatchlistEvent {
+  final int id;
+  final int isMovie;
 
-  const IsWatchlist(this.watchlist);
+  const StatusWatchlist(this.id, this.isMovie);
 
   @override
-  List<Object> get props => [watchlist];
+  List<Object> get props => [id, isMovie];
 }
 
 class RemoveWatchlist extends WatchlistEvent {

@@ -1,65 +1,160 @@
 import 'package:cached_network_image/cached_network_image.dart';
 import 'package:ditonton/common/constants.dart';
+import 'package:ditonton/domain/entities/content_arguments.dart';
 import 'package:ditonton/domain/entities/genre.dart';
 import 'package:ditonton/domain/entities/watchlist.dart';
+import 'package:ditonton/presentation/blocs/movie_detail/movie_detail_bloc.dart';
 import 'package:ditonton/presentation/blocs/movie_recommendation/movie_recommendation_bloc.dart';
+import 'package:ditonton/presentation/blocs/tv_detail/tv_detail_bloc.dart';
 import 'package:ditonton/presentation/blocs/tv_recommendation/tv_recommendation_bloc.dart';
 import 'package:ditonton/presentation/blocs/watchlist/watchlist_bloc.dart';
 import 'package:ditonton/presentation/widgets/item_list_card.dart';
+import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:flutter_rating_bar/flutter_rating_bar.dart';
 
-class DetailContent extends StatefulWidget {
-  final int id;
-  final String title;
-  final String posterPath;
-  final String overview;
-  final List<Genre> genres;
-  final int runtime;
-  final double voteAverage;
-  final int isMovie;
+class DetailPage extends StatefulWidget {
+  final ContentArguments arguments;
 
-  const DetailContent({
-    Key? key,
-    required this.id,
-    required this.title,
-    required this.posterPath,
-    required this.overview,
-    required this.genres,
-    required this.runtime,
-    required this.voteAverage,
-    required this.isMovie,
-  }) : super(key: key);
+  const DetailPage({Key? key, required this.arguments}) : super(key: key);
 
   @override
-  State<DetailContent> createState() => _DetailContentState();
+  State<DetailPage> createState() => DetailPageState();
 }
 
-class _DetailContentState extends State<DetailContent> with RouteAware {
+class DetailPageState extends State<DetailPage> with RouteAware {
   @override
   void initState() {
     Future.microtask(() {
-      widget.isMovie == 1
-          ? context
-              .read<MovieRecommendationBloc>()
-              .add(GetMovieRecommendation(widget.id))
-          : context
-              .read<TvRecommendationBloc>()
-              .add(GetTvRecommendation(widget.id));
+      context
+          .read<WatchlistBloc>()
+          .add(StatusWatchlist(widget.arguments.id, widget.arguments.isMovie));
+      if (widget.arguments.isMovie == 1) {
+        context
+            .read<MovieDetailBloc>()
+            .add(GetDetailMovie(widget.arguments.id));
+        context
+            .read<MovieRecommendationBloc>()
+            .add(GetMovieRecommendation(widget.arguments.id));
+      } else {
+        context.read<TvDetailBloc>().add(
+              GetDetailTv(widget.arguments.id),
+            );
+        context
+            .read<TvRecommendationBloc>()
+            .add(GetTvRecommendation(widget.arguments.id));
+      }
     });
     super.initState();
   }
 
   @override
   Widget build(BuildContext context) {
+    return Scaffold(
+      body: widget.arguments.isMovie == 1 ? _movieBuilder() : _tvBuilder(),
+    );
+  }
+
+  Widget _movieBuilder() {
+    return BlocListener<WatchlistBloc, WatchlistState>(
+      listener: (context, state) {
+        if (state is WatchlistSuccess) {
+          ScaffoldMessenger.of(context)
+              .showSnackBar(SnackBar(content: Text(state.message)));
+          context.read<WatchlistBloc>().add(StatusWatchlist(
+                widget.arguments.id,
+                widget.arguments.isMovie,
+              ));
+        }
+      },
+      child: BlocBuilder<MovieDetailBloc, MovieDetailState>(
+        builder: (context, state) {
+          if (state is MovieDetailLoading) {
+            return const Center(child: CircularProgressIndicator());
+          } else if (state is MovieDetailLoaded) {
+            final detail = state.movieDetail;
+            final isWatchlist = (context.watch<WatchlistBloc>().state
+                    is WatchlistStatusLoaded)
+                ? (context.read<WatchlistBloc>().state as WatchlistStatusLoaded)
+                    .status
+                : false;
+            return _detailContent(
+              detail.title,
+              detail.posterPath,
+              detail.overview,
+              detail.genres,
+              detail.runtime,
+              detail.voteAverage,
+              isWatchlist,
+            );
+          } else if (state is MovieDetailError) {
+            return Center(child: Text(state.message));
+          } else {
+            return Container();
+          }
+        },
+      ),
+    );
+  }
+
+  Widget _tvBuilder() {
+    return BlocListener<WatchlistBloc, WatchlistState>(
+      listener: (context, state) {
+        if (state is WatchlistSuccess) {
+          ScaffoldMessenger.of(context)
+              .showSnackBar(SnackBar(content: Text(state.message)));
+          context.read<WatchlistBloc>().add(StatusWatchlist(
+                widget.arguments.id,
+                widget.arguments.isMovie,
+              ));
+        }
+      },
+      child: BlocBuilder<TvDetailBloc, TvDetailState>(
+        builder: (context, state) {
+          if (state is TvDetailLoading) {
+            return const Center(child: CircularProgressIndicator());
+          } else if (state is TvDetailLoaded) {
+            final detail = state.tvDetail;
+            final isWatchlist = (context.watch<WatchlistBloc>().state
+                    is WatchlistStatusLoaded)
+                ? (context.read<WatchlistBloc>().state as WatchlistStatusLoaded)
+                    .status
+                : false;
+            if (kDebugMode) print(isWatchlist);
+            return _detailContent(
+              detail.title,
+              detail.posterPath,
+              detail.overview,
+              detail.genres,
+              detail.runtime,
+              detail.voteAverage,
+              isWatchlist,
+            );
+          } else if (state is TvDetailError) {
+            return Center(child: Text(state.message));
+          } else {
+            return const Text("");
+          }
+        },
+      ),
+    );
+  }
+
+  Widget _detailContent(
+    String title,
+    String posterPath,
+    String overview,
+    List<Genre> genres,
+    int runtime,
+    double voteAverage,
+    bool isWatchlist,
+  ) {
     final screenWidth = MediaQuery.of(context).size.width;
-    final isWatchlist =
-        (context.watch<WatchlistBloc>().state is WatchlistListed);
     return Stack(
       children: [
         CachedNetworkImage(
-          imageUrl: 'https://image.tmdb.org/t/p/w500${widget.posterPath}',
+          imageUrl: 'https://image.tmdb.org/t/p/w500$posterPath',
           width: screenWidth,
           placeholder: (context, url) =>
               const Center(child: CircularProgressIndicator()),
@@ -90,31 +185,33 @@ class _DetailContentState extends State<DetailContent> with RouteAware {
                           crossAxisAlignment: CrossAxisAlignment.start,
                           children: [
                             Text(
-                              widget.title,
+                              title,
                               style: kHeading5,
                             ),
                             ElevatedButton(
-                              onPressed: () async {
+                              onPressed: () {
                                 isWatchlist
                                     ? context
                                         .read<WatchlistBloc>()
                                         .add(RemoveWatchlist(
                                           Watchlist(
-                                              id: widget.id,
-                                              title: widget.title,
-                                              overview: widget.overview,
-                                              posterPath: widget.posterPath,
-                                              isMovie: widget.isMovie),
+                                            id: widget.arguments.id,
+                                            title: title,
+                                            overview: overview,
+                                            posterPath: posterPath,
+                                            isMovie: widget.arguments.isMovie,
+                                          ),
                                         ))
                                     : context
                                         .read<WatchlistBloc>()
                                         .add(AddWatchlist(
                                           Watchlist(
-                                              id: widget.id,
-                                              title: widget.title,
-                                              overview: widget.overview,
-                                              posterPath: widget.posterPath,
-                                              isMovie: widget.isMovie),
+                                            id: widget.arguments.id,
+                                            title: title,
+                                            overview: overview,
+                                            posterPath: posterPath,
+                                            isMovie: widget.arguments.isMovie,
+                                          ),
                                         ));
                               },
                               child: Row(
@@ -128,15 +225,15 @@ class _DetailContentState extends State<DetailContent> with RouteAware {
                               ),
                             ),
                             Text(
-                              _showGenres(widget.genres),
+                              _showGenres(genres),
                             ),
                             Text(
-                              _showDuration(widget.runtime),
+                              _showDuration(runtime),
                             ),
                             Row(
                               children: [
                                 RatingBarIndicator(
-                                  rating: widget.voteAverage / 2,
+                                  rating: voteAverage / 2,
                                   itemCount: 5,
                                   itemBuilder: (context, index) => const Icon(
                                     Icons.star,
@@ -144,7 +241,7 @@ class _DetailContentState extends State<DetailContent> with RouteAware {
                                   ),
                                   itemSize: 24,
                                 ),
-                                Text('${widget.voteAverage}')
+                                Text('$voteAverage')
                               ],
                             ),
                             const SizedBox(height: 16),
@@ -153,14 +250,14 @@ class _DetailContentState extends State<DetailContent> with RouteAware {
                               style: kHeading6,
                             ),
                             Text(
-                              widget.overview,
+                              overview,
                             ),
                             const SizedBox(height: 16),
                             Text(
                               'Recommendations',
                               style: kHeading6,
                             ),
-                            _buildRecommendations(widget.id, widget.isMovie),
+                            _buildRecommendations(),
                           ],
                         ),
                       ),
@@ -197,8 +294,8 @@ class _DetailContentState extends State<DetailContent> with RouteAware {
     );
   }
 
-  Widget _buildRecommendations(int id, int isMovie) {
-    return isMovie == 1
+  Widget _buildRecommendations() {
+    return widget.arguments.isMovie == 1
         ? BlocBuilder<MovieRecommendationBloc, MovieRecommendationState>(
             builder: (context, state) {
               if (state is MovieRecommendationLoading) {

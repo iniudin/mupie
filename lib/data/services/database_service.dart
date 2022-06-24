@@ -57,7 +57,7 @@ class DatabaseService {
     final result = await db!.query(
       tableName,
       where: 'id = ? and isMovie = ?',
-      whereArgs: [id],
+      whereArgs: [id, isMovie],
     );
 
     return result.isNotEmpty;

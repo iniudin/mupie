@@ -40,11 +40,11 @@ class DetailUsecase {
     return watchlistRepository.isWatchlisted(id, isMovie);
   }
 
-  Future<Either<Failure, int>> save(Watchlist watchlist) {
+  Future<Either<Failure, String>> save(Watchlist watchlist) {
     return watchlistRepository.save(watchlist);
   }
 
-  Future<Either<Failure, int>> remove(Watchlist watchlist) {
+  Future<Either<Failure, String>> remove(Watchlist watchlist) {
     return watchlistRepository.remove(watchlist);
   }
 }

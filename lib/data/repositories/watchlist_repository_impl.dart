@@ -22,22 +22,22 @@ class WatchlistRepositoryImpl implements WatchlistRepository {
   }
 
   @override
-  Future<Either<Failure, int>> remove(Watchlist watchlist) async {
+  Future<Either<Failure, String>> remove(Watchlist watchlist) async {
     try {
-      final result = await localDataSource
+      await localDataSource
           .removeWatchlist(WatchlistModel.fromEntity(watchlist));
-      return Right(result);
+      return const Right('Removed from Watchlist');
     } on DatabaseException catch (e) {
       return Left(DatabaseFailure(e.message));
     }
   }
 
   @override
-  Future<Either<Failure, int>> save(Watchlist watchlist) async {
+  Future<Either<Failure, String>> save(Watchlist watchlist) async {
     try {
-      final result = await localDataSource
+      await localDataSource
           .insertWatchlist(WatchlistModel.fromEntity(watchlist));
-      return Right(result);
+      return const Right('Added to Watchlist');
     } on DatabaseException catch (e) {
       return Left(DatabaseFailure(e.message));
     }

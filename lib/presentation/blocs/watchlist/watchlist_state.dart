@@ -20,6 +20,15 @@ class WatchlistLoaded extends WatchlistState {
   List<Object> get props => [watchlist];
 }
 
+class WatchlistStatusLoaded extends WatchlistState {
+  final bool status;
+
+  const WatchlistStatusLoaded(this.status);
+
+  @override
+  List<Object> get props => [status];
+}
+
 class WatchlistNoData extends WatchlistState {
   final String message;
 
@@ -45,4 +54,13 @@ class WatchlistListed extends WatchlistState {
 
   @override
   List<Object> get props => [isWatchlist];
+}
+
+class WatchlistSuccess extends WatchlistState {
+  final String message;
+
+  const WatchlistSuccess(this.message);
+
+  @override
+  List<Object> get props => [message];
 }
