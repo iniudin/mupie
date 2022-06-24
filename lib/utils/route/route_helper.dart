@@ -1,5 +1,6 @@
 import 'package:ditonton/domain/entities/content_arguments.dart';
 import 'package:ditonton/domain/entities/search_arguments.dart';
+import 'package:ditonton/presentation/pages/about_page.dart';
 import 'package:ditonton/presentation/pages/detail_page.dart';
 import 'package:ditonton/presentation/pages/home_page.dart';
 import 'package:ditonton/presentation/pages/movie/movie_popular.dart';
@@ -8,6 +9,7 @@ import 'package:ditonton/presentation/pages/search_page.dart';
 import 'package:ditonton/presentation/pages/tv/tv_popular.dart';
 import 'package:ditonton/presentation/pages/tv/tv_top_rated.dart';
 import 'package:ditonton/presentation/pages/unknown_page.dart';
+import 'package:ditonton/presentation/pages/watchlist_page.dart';
 import 'package:flutter/material.dart';
 
 part 'route_name_helper.dart';
@@ -21,6 +23,11 @@ class RouteHelper {
       case homeRoute:
         return MaterialPageRoute(
           builder: (_) => const HomePage(),
+          settings: settings,
+        );
+      case aboutRoute:
+        return MaterialPageRoute(
+          builder: (_) => const AboutPage(),
           settings: settings,
         );
       case movieTopRatedRoute:
@@ -41,6 +48,11 @@ class RouteHelper {
       case tvPopularRoute:
         return MaterialPageRoute(
           builder: (_) => const TvPopularPage(),
+          settings: settings,
+        );
+      case watchlistRoute:
+        return MaterialPageRoute(
+          builder: (_) => const WatchlistPage(),
           settings: settings,
         );
       case detailRoute:

@@ -1,5 +1,6 @@
 import 'package:ditonton/presentation/blocs/watchlist/watchlist_bloc.dart';
 import 'package:ditonton/presentation/widgets/item_card.dart';
+import 'package:ditonton/utils/route/route_observer_helper.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 
@@ -10,13 +11,33 @@ class WatchlistPage extends StatefulWidget {
   State<WatchlistPage> createState() => _WatchlistPageState();
 }
 
-class _WatchlistPageState extends State<WatchlistPage> {
+class _WatchlistPageState extends State<WatchlistPage> with RouteAware {
   @override
   void initState() {
     super.initState();
     Future.microtask(() {
       context.read<WatchlistBloc>().add(const GetList());
     });
+  }
+
+  @override
+  void didChangeDependencies() {
+    routeObserver.subscribe(this, ModalRoute.of(context)!);
+    super.didChangeDependencies();
+  }
+
+  @override
+  void didPop() {
+    Future.microtask(() {
+      context.read<WatchlistBloc>().add(const GetList());
+    });
+    super.didPop();
+  }
+
+  @override
+  void dispose() {
+    routeObserver.unsubscribe(this);
+    super.dispose();
   }
 
   @override

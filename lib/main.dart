@@ -18,8 +18,15 @@ import 'package:ditonton/utils/route/route_observer_helper.dart';
 import 'package:flutter/material.dart';
 import 'package:ditonton/injection.dart' as di;
 import 'package:flutter_bloc/flutter_bloc.dart';
+import 'package:firebase_crashlytics/firebase_crashlytics.dart';
 
-void main() {
+void main() async {
+  WidgetsFlutterBinding.ensureInitialized();
+
+  await Firebase.initializeApp();
+
+  FlutterError.onError = FirebaseCrashlytics.instance.recordFlutterFatalError;
+
   di.init();
   runApp(const MyApp());
 }

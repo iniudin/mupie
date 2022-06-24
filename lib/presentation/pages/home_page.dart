@@ -51,14 +51,12 @@ class _HomePageState extends State<HomePage> {
               leading: const Icon(Icons.save_alt),
               title: const Text('Watchlist'),
               onTap: () {
-                _pageController.jumpToPage(2);
-                Navigator.pop(context);
+                Navigator.pushNamed(context, watchlistRoute);
               },
             ),
             ListTile(
               onTap: () {
-                _pageController.jumpToPage(3);
-                Navigator.pop(context);
+                Navigator.pushNamed(context, aboutRoute);
               },
               leading: const Icon(Icons.info_outline),
               title: const Text('About'),
@@ -74,8 +72,9 @@ class _HomePageState extends State<HomePage> {
               Navigator.pushNamed(
                 context,
                 searchRoute,
-                arguments:
-                    SearchArguments(isMovie: _pageController.page == 0 ? 1 : 0),
+                arguments: SearchArguments(
+                  isMovie: _pageController.page == 0 ? 1 : 0,
+                ),
               );
             },
             icon: const Icon(Icons.search),
@@ -89,7 +88,6 @@ class _HomePageState extends State<HomePage> {
         children: const <Widget>[
           MoviePage(),
           TvPage(),
-          WatchlistPage(),
         ],
       ),
     );
