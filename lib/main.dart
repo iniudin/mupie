@@ -1,4 +1,5 @@
 import 'package:ditonton/common/constants.dart';
+import 'package:ditonton/firebase_options.dart';
 import 'package:ditonton/presentation/blocs/movie_detail/movie_detail_bloc.dart';
 import 'package:ditonton/presentation/blocs/movie_on_playing/movie_on_playing_bloc.dart';
 import 'package:ditonton/presentation/blocs/movie_popular/popular_bloc.dart';
@@ -15,6 +16,7 @@ import 'package:ditonton/presentation/blocs/watchlist/watchlist_bloc.dart';
 import 'package:ditonton/utils/navigation/navigation_helper.dart';
 import 'package:ditonton/utils/route/route_helper.dart';
 import 'package:ditonton/utils/route/route_observer_helper.dart';
+import 'package:firebase_core/firebase_core.dart';
 import 'package:flutter/material.dart';
 import 'package:ditonton/injection.dart' as di;
 import 'package:flutter_bloc/flutter_bloc.dart';
@@ -23,7 +25,9 @@ import 'package:firebase_crashlytics/firebase_crashlytics.dart';
 void main() async {
   WidgetsFlutterBinding.ensureInitialized();
 
-  await Firebase.initializeApp();
+  await Firebase.initializeApp(
+    options: DefaultFirebaseOptions.currentPlatform,
+  );
 
   FlutterError.onError = FirebaseCrashlytics.instance.recordFlutterFatalError;
 
