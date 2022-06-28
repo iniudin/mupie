@@ -18,7 +18,7 @@ class MovieTopRatedBloc extends Bloc<MovieTopRatedEvent, MovieTopRatedState> {
         (error) => emit(MovieTopRatedError(error.message)),
         (movies) => movies.isNotEmpty
             ? emit(MovieTopRatedLoaded(movies))
-            : emit(const MovieTopRatedError('Failed')),
+            : emit(const MovieTopRatedError('')),
       );
     });
   }

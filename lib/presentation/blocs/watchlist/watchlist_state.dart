@@ -47,15 +47,6 @@ class WatchlistError extends WatchlistState {
   List<Object> get props => [message];
 }
 
-class WatchlistListed extends WatchlistState {
-  final bool isWatchlist;
-
-  const WatchlistListed(this.isWatchlist);
-
-  @override
-  List<Object> get props => [isWatchlist];
-}
-
 class WatchlistSuccess extends WatchlistState {
   final String message;
 

@@ -1,7 +1,6 @@
 import 'package:ditonton/domain/entities/search_arguments.dart';
 import 'package:ditonton/presentation/pages/movie/movie_list.dart';
 import 'package:ditonton/presentation/pages/tv/tv_list.dart';
-import 'package:ditonton/presentation/pages/watchlist_page.dart';
 import 'package:ditonton/utils/route/route_helper.dart';
 import 'package:flutter/material.dart';
 

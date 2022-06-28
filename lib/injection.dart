@@ -2,8 +2,6 @@ import 'package:ditonton/data/repositories/movie_repository_impl.dart';
 import 'package:ditonton/data/repositories/tv_repository_impl.dart';
 import 'package:ditonton/data/repositories/watchlist_repository_impl.dart';
 import 'package:ditonton/data/services/database_service.dart';
-import 'package:ditonton/data/services/movie_service.dart';
-import 'package:ditonton/data/services/tv_service.dart';
 import 'package:ditonton/data/sources/movie_remote_data_source.dart';
 import 'package:ditonton/data/sources/tv_remote_data_source.dart';
 import 'package:ditonton/data/sources/watchlist_local_data_source.dart';
@@ -88,16 +86,14 @@ void init() {
   );
 
   /// Initialize for Services
-  getIt.registerLazySingleton<MovieService>(() => MovieService());
-  getIt.registerLazySingleton<TvService>(() => TvService());
   getIt.registerLazySingleton<DatabaseService>(() => DatabaseService());
 
   /// Initialize for Data sources
   getIt.registerLazySingleton<MovieRemoteDataSource>(
-    () => MovieRemoteDataSourceImpl(getIt()),
+    () => MovieRemoteDataSource(),
   );
   getIt.registerLazySingleton<TvRemoteDataSource>(
-    () => TvRemoteDataSourceImpl(getIt()),
+    () => TvRemoteDataSource(),
   );
   getIt.registerLazySingleton<WatchlistLocalDataSource>(
     () => WatchlistLocalDataSourceImpl(getIt()),

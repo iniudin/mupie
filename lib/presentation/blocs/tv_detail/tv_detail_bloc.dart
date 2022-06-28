@@ -22,7 +22,7 @@ class TvDetailBloc extends Bloc<TvDetailEvent, TvDetailState> {
           (error) => emit(TvDetailError(error.message)),
           (detail) => detail.title.isNotEmpty
               ? emit(TvDetailLoaded(detail))
-              : emit(const TvDetailNoData("")),
+              : emit(const TvDetailError("")),
         );
       },
     );

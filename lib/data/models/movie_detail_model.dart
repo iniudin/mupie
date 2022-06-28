@@ -2,8 +2,8 @@ import 'package:ditonton/data/models/genre_model.dart';
 import 'package:ditonton/domain/entities/movie_detail.dart';
 import 'package:equatable/equatable.dart';
 
-class MovieDetailResponse extends Equatable {
-  const MovieDetailResponse({
+class MovieDetailModel extends Equatable {
+  const MovieDetailModel({
     required this.adult,
     required this.backdropPath,
     required this.budget,
@@ -49,8 +49,8 @@ class MovieDetailResponse extends Equatable {
   final double voteAverage;
   final int voteCount;
 
-  factory MovieDetailResponse.fromJson(Map<String, dynamic> json) =>
-      MovieDetailResponse(
+  factory MovieDetailModel.fromJson(Map<String, dynamic> json) =>
+      MovieDetailModel(
         adult: json["adult"],
         backdropPath: json["backdrop_path"],
         budget: json["budget"],

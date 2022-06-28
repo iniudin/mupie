@@ -28,12 +28,3 @@ class TvDetailError extends TvDetailState {
   @override
   List<Object> get props => [message];
 }
-
-class TvDetailNoData extends TvDetailState {
-  final String message;
-
-  const TvDetailNoData(this.message);
-
-  @override
-  List<Object> get props => [message];
-}

@@ -1,0 +1,405 @@
+{
+  "page": 1,
+  "results": [
+    {
+      "backdrop_path": "/n6vVs6z8obNbExdD3QHTr4Utu1Z.jpg",
+      "first_air_date": "2019-07-25",
+      "genre_ids": [
+        10765,
+        10759
+      ],
+      "id": 76479,
+      "name": "The Boys",
+      "origin_country": [
+        "US"
+      ],
+      "original_language": "en",
+      "original_name": "The Boys",
+      "overview": "A group of vigilantes known informally as “The Boys” set out to take down corrupt superheroes with no more than blue-collar grit and a willingness to fight dirty.",
+      "popularity": 4083.349,
+      "poster_path": "/stTEycfG9928HYGEISBFaG1ngjM.jpg",
+      "vote_average": 8.4,
+      "vote_count": 6245
+    },
+    {
+      "backdrop_path": "/56v2KjBlU4XaOv9rVYEQypROD7P.jpg",
+      "first_air_date": "2016-07-15",
+      "genre_ids": [
+        18,
+        10765,
+        9648
+      ],
+      "id": 66732,
+      "name": "Stranger Things",
+      "origin_country": [
+        "US"
+      ],
+      "original_language": "en",
+      "original_name": "Stranger Things",
+      "overview": "When a young boy vanishes, a small town uncovers a mystery involving secret experiments, terrifying supernatural forces, and one strange little girl.",
+      "popularity": 2541.868,
+      "poster_path": "/49WJfeN0moxb9IPfGn8AIqMGskD.jpg",
+      "vote_average": 8.6,
+      "vote_count": 11185
+    },
+    {
+      "backdrop_path": "/rlCRM7U5g2hcU1O8ylGcqsMYHIP.jpg",
+      "first_air_date": "2022-06-08",
+      "genre_ids": [
+        10765,
+        10759,
+        35
+      ],
+      "id": 92782,
+      "name": "Ms. Marvel",
+      "origin_country": [
+        "US"
+      ],
+      "original_language": "en",
+      "original_name": "Ms. Marvel",
+      "overview": "A great student, avid gamer, and voracious fan-fic scribe, Kamala Khan has a special affinity for superheroes, particularly Captain Marvel. However, she struggles to fit in at home and at school — that is, until she gets superpowers like the heroes she’s always looked up to. Life is easier with superpowers, right?",
+      "popularity": 1933.888,
+      "poster_path": "/cdkyMYdu8ao26XOBvilNzLneUg1.jpg",
+      "vote_average": 7.8,
+      "vote_count": 178
+    },
+    {
+      "backdrop_path": "/1WX8kxIIECPNAqbieVurqfpjxoo.jpg",
+      "first_air_date": "2022-05-30",
+      "genre_ids": [
+        35,
+        10759,
+        10766
+      ],
+      "id": 197189,
+      "name": "Cara e Coragem",
+      "origin_country": [
+        "BR"
+      ],
+      "original_language": "pt",
+      "original_name": "Cara e Coragem",
+      "overview": "",
+      "popularity": 1176.041,
+      "poster_path": "/8CXbCCGiJxi4AXPBQ1QPrehMIGG.jpg",
+      "vote_average": 1,
+      "vote_count": 1
+    },
+    {
+      "backdrop_path": "/41yaWnIT8AjIHiULHtTbKNzZTjc.jpg",
+      "first_air_date": "2014-10-07",
+      "genre_ids": [
+        18,
+        10765
+      ],
+      "id": 60735,
+      "name": "The Flash",
+      "origin_country": [
+        "US"
+      ],
+      "original_language": "en",
+      "original_name": "The Flash",
+      "overview": "After a particle accelerator causes a freak storm, CSI Investigator Barry Allen is struck by lightning and falls into a coma. Months later he awakens with the power of super speed, granting him the ability to move through Central City like an unseen guardian angel. Though initially excited by his newfound powers, Barry is shocked to discover he is not the only \"meta-human\" who was created in the wake of the accelerator explosion -- and not everyone is using their new powers for good. Barry partners with S.T.A.R. Labs and dedicates his life to protect the innocent. For now, only a few close friends and associates know that Barry is literally the fastest man alive, but it won't be long before the world learns what Barry Allen has become...The Flash.",
+      "popularity": 846.996,
+      "poster_path": "/lJA2RCMfsWoskqlQhXPSLFQGXEJ.jpg",
+      "vote_average": 7.8,
+      "vote_count": 9729
+    },
+    {
+      "backdrop_path": "/AnfXhKJwb9rBa8cvPBV54XgJxMF.jpg",
+      "first_air_date": "2022-03-28",
+      "genre_ids": [
+        18,
+        10766
+      ],
+      "id": 158415,
+      "name": "Pantanal",
+      "origin_country": [
+        "BR"
+      ],
+      "original_language": "pt",
+      "original_name": "Pantanal",
+      "overview": "After the mysterious disappearance of his father, Joventino, the cowboy José Leôncio becomes a wealthy farm owner in Pantanal. Over twenty years have passed and, bitter-hearted because of his father vanishing and the escape of his wife to Rio de Janeiro with his baby, José Leôncio has the chance to make amends with the boy, now a young man raised in the big city with very different values and habits than his own.",
+      "popularity": 1116.815,
+      "poster_path": "/4Ru1BwcAKWtpM345dWe8YgHf35V.jpg",
+      "vote_average": 4.7,
+      "vote_count": 23
+    },
+    {
+      "backdrop_path": "/pNL5yrdXsMWA4jJMtzRxtLOVaCM.jpg",
+      "first_air_date": "2021-04-11",
+      "genre_ids": [
+        10764
+      ],
+      "id": 121726,
+      "name": "Love Island Spain",
+      "origin_country": [
+        "ES"
+      ],
+      "original_language": "es",
+      "original_name": "Love Island España",
+      "overview": "",
+      "popularity": 989.247,
+      "poster_path": "/t8HcfOCBgOONjfuHAIzuJglnAZS.jpg",
+      "vote_average": 2,
+      "vote_count": 1
+    },
+    {
+      "backdrop_path": "/5y2sHlCndnEZC6MjkJ4w40WFzo5.jpg",
+      "first_air_date": "2022-02-07",
+      "genre_ids": [
+        18,
+        10766
+      ],
+      "id": 154911,
+      "name": "Além da Ilusão",
+      "origin_country": [
+        "BR"
+      ],
+      "original_language": "pt",
+      "original_name": "Além da Ilusão",
+      "overview": "",
+      "popularity": 807.212,
+      "poster_path": "/8BzuwDAMamf5TX4TepbDDEq7ima.jpg",
+      "vote_average": 5.9,
+      "vote_count": 11
+    },
+    {
+      "backdrop_path": "/ngDo5MKVl3oGTe2s3HRPtGJa5Iz.jpg",
+      "first_air_date": "2021-02-23",
+      "genre_ids": [
+        10765,
+        18
+      ],
+      "id": 95057,
+      "name": "Superman & Lois",
+      "origin_country": [
+        "US"
+      ],
+      "original_language": "en",
+      "original_name": "Superman & Lois",
+      "overview": "After years of facing megalomaniacal supervillains, monsters wreaking havoc on Metropolis, and alien invaders intent on wiping out the human race, The Man of Steel aka Clark Kent and Lois Lane come face to face with one of their greatest challenges ever: dealing with all the stress, pressures and complexities that come with being working parents in today's society.",
+      "popularity": 581.968,
+      "poster_path": "/utpXq61UIlfNUuviz2hRmCEYdYr.jpg",
+      "vote_average": 8.1,
+      "vote_count": 1724
+    },
+    {
+      "backdrop_path": "/ey7d70Jqf17SsIsE8fZM0YasZmZ.jpg",
+      "first_air_date": "2022-05-16",
+      "genre_ids": [
+        35,
+        18
+      ],
+      "id": 135647,
+      "name": "2 Good 2 Be True",
+      "origin_country": [
+        "PH"
+      ],
+      "original_language": "tl",
+      "original_name": "2 Good 2 Be True",
+      "overview": "Car mechanic Eloy makes a terrible first impression on Ali, who works for a real estate magnate. But both of them are hiding their true personas.",
+      "popularity": 734.552,
+      "poster_path": "/2Wf5ySCPcnp8lRhbSD7jt0YLz5A.jpg",
+      "vote_average": 7.7,
+      "vote_count": 37
+    },
+    {
+      "backdrop_path": "/ggkYRGptz8eKTYnDefEjsX7fazd.jpg",
+      "first_air_date": "2022-05-26",
+      "genre_ids": [
+        16,
+        10762
+      ],
+      "id": 158691,
+      "name": "My Little Pony: Make Your Mark",
+      "origin_country": [
+        "US"
+      ],
+      "original_language": "en",
+      "original_name": "My Little Pony: Make Your Mark",
+      "overview": "The series will center on the adventures of Sunny Starscout and her friends after the events depicted in the film.",
+      "popularity": 566.587,
+      "poster_path": "/jfmQPOHnuARC7YxGYC1vMMph3vp.jpg",
+      "vote_average": 7.9,
+      "vote_count": 35
+    },
+    {
+      "backdrop_path": "/xuXCdUTbTXlFH2zL3U6FbFdJ1w3.jpg",
+      "first_air_date": "2016-04-12",
+      "genre_ids": [
+        10764
+      ],
+      "id": 79028,
+      "name": "Power Couple Brasil",
+      "origin_country": [
+        "BR"
+      ],
+      "original_language": "pt",
+      "original_name": "Power Couple Brasil",
+      "overview": "Confined in a mansion in Sao Paulo, couples will have to face trials of endurance, skill and reasoning and, of course, test how much one knows the other. In the end, only the strongest couple with the best knowledge of themselves will win the competition.",
+      "popularity": 703.945,
+      "poster_path": "/s0gqncO6khWQj4QzLpQ7z4h3lYZ.jpg",
+      "vote_average": 5.1,
+      "vote_count": 10
+    },
+    {
+      "backdrop_path": null,
+      "first_air_date": "2019-01-28",
+      "genre_ids": [
+        10763
+      ],
+      "id": 154300,
+      "name": "Euronews Hoy",
+      "origin_country": [
+        "ES",
+        "FR"
+      ],
+      "original_language": "es",
+      "original_name": "Euronews Hoy",
+      "overview": "",
+      "popularity": 667.863,
+      "poster_path": "/ujeIjo0GTRbFJcgjhgFZda78A90.jpg",
+      "vote_average": 5,
+      "vote_count": 2
+    },
+    {
+      "backdrop_path": "/A6vUgZvNHvr1aie6YgLhiqQyAkF.jpg",
+      "first_air_date": "2020-01-20",
+      "genre_ids": [
+        10764
+      ],
+      "id": 136166,
+      "name": "Lang Leve de Liefde",
+      "origin_country": [
+        "NL"
+      ],
+      "original_language": "nl",
+      "original_name": "Lang Leve de Liefde",
+      "overview": "",
+      "popularity": 663.895,
+      "poster_path": "/9lpvvzEl5kViIc2vUJG4QKzj2ds.jpg",
+      "vote_average": 0,
+      "vote_count": 0
+    },
+    {
+      "backdrop_path": "/rzAzvWJoZSwVSswvWsKx1lqT63m.jpg",
+      "first_air_date": "2022-05-05",
+      "genre_ids": [
+        10765
+      ],
+      "id": 103516,
+      "name": "Star Trek: Strange New Worlds",
+      "origin_country": [
+        "US"
+      ],
+      "original_language": "en",
+      "original_name": "Star Trek: Strange New Worlds",
+      "overview": "Follow Christopher Pike, Spock and Number One in the years before Captain Kirk boarded the U.S.S. Enterprise, as they explore new worlds around the galaxy. This show is a prequel to the original series and Star Trek: Discovery.",
+      "popularity": 472.615,
+      "poster_path": "/iwIdajr5Y4zq2ibvq75VnDAJBr.jpg",
+      "vote_average": 8.1,
+      "vote_count": 96
+    },
+    {
+      "backdrop_path": "/xio3AqrtsEERoVghgl8WWG0mXMu.jpg",
+      "first_air_date": "2022-04-24",
+      "genre_ids": [
+        10765
+      ],
+      "id": 118663,
+      "name": "The Man Who Fell to Earth",
+      "origin_country": [
+        "US"
+      ],
+      "original_language": "en",
+      "original_name": "The Man Who Fell to Earth",
+      "overview": "An extraterrestrial alien arrives on Earth at a turning point in human evolution and must confront his own past to determine our future.",
+      "popularity": 314.426,
+      "poster_path": "/p1aBjGkyG25ADy4xu69joNMV3eQ.jpg",
+      "vote_average": 7.8,
+      "vote_count": 45
+    },
+    {
+      "backdrop_path": "/1BGdbvrHYXqZirMIGQlS4LQMh77.jpg",
+      "first_air_date": "2015-10-19",
+      "genre_ids": [
+        10759,
+        16,
+        10762
+      ],
+      "id": 65334,
+      "name": "Miraculous: Tales of Ladybug & Cat Noir",
+      "origin_country": [
+        "FR"
+      ],
+      "original_language": "fr",
+      "original_name": "Miraculous, les aventures de Ladybug et Chat Noir",
+      "overview": "Normal high school kids by day, protectors of Paris by night! Miraculous follows the heroic adventures of Marinette and Adrien as they transform into Ladybug and Cat Noir and set out to capture akumas, creatures responsible for turning the people of Paris into villains. But neither hero knows the other’s true identity – or that they’re classmates!",
+      "popularity": 537.743,
+      "poster_path": "/psDcRgUX38cIeGeADwLRPyO7SYC.jpg",
+      "vote_average": 8,
+      "vote_count": 3715
+    },
+    {
+      "backdrop_path": "/mkIKdkBWcUZkjGl2ktzMlT28XL.jpg",
+      "first_air_date": "2022-04-02",
+      "genre_ids": [
+        18,
+        10759
+      ],
+      "id": 117067,
+      "name": "KinnPorsche The Series",
+      "origin_country": [
+        "TH"
+      ],
+      "original_language": "th",
+      "original_name": "รักโคตรร้าย สุดท้ายโคตรรัก",
+      "overview": "Porsche, a down and about waiter who carries the hopes and dreams of his brother on his shoulders is thrust into the feuding world of the mafia. He reluctantly becomes a bodyguard for the major clan, which only brings more problems to his life. The main source of his strife is with Kinn, but the more obstacles and trials that they get through together the closer they become. The feelings of passion start to form between them and they soon fall in love with one another. Porsche has to encounter many mysteries that are too coincidental not to be connected. It all revolves around the death of his parents and the events of the will be a key variable in the transformation.",
+      "popularity": 414.921,
+      "poster_path": "/tWVVAptzKrCx2GEae8uH1RqMv8d.jpg",
+      "vote_average": 8.7,
+      "vote_count": 19
+    },
+    {
+      "backdrop_path": "/2748H9LoK2oQd9L7ofze8VjCGhS.jpg",
+      "first_air_date": "2020-07-13",
+      "genre_ids": [
+        18,
+        10766
+      ],
+      "id": 116479,
+      "name": "Anupamaa",
+      "origin_country": [
+        "IN"
+      ],
+      "original_language": "hi",
+      "original_name": "अनुपमा",
+      "overview": "Anupama had to sacrifice a lot to become an ideal wife, daughter-in-law, and mother. After a bitter realisation, she sets out to live on her own terms.",
+      "popularity": 531.161,
+      "poster_path": "/9R4Qtm01pNh0CzdoIyvHKefe5RL.jpg",
+      "vote_average": 4.4,
+      "vote_count": 23
+    },
+    {
+      "backdrop_path": "/uvtMBoNqaEfDy257oZ7SRlC9VYR.jpg",
+      "first_air_date": "2015-06-07",
+      "genre_ids": [
+        10764
+      ],
+      "id": 66636,
+      "name": "Love Island",
+      "origin_country": [
+        "GB"
+      ],
+      "original_language": "en",
+      "original_name": "Love Island",
+      "overview": "A stunning cast engages in the ultimate game of love, as they land in a sunshine paradise in search of passion and romance. Each of the glamorous members of the public will live like celebrities in a luxury villa, but in order to stay there, they will not only have to win over the hearts of each other, but also the hearts of the public.",
+      "popularity": 350.053,
+      "poster_path": "/xcvfGvsEyKm01dIHLh2gxnhM14A.jpg",
+      "vote_average": 6,
+      "vote_count": 85
+    }
+  ],
+  "total_pages": 40,
+  "total_results": 794
+}

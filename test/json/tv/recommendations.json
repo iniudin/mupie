@@ -1,0 +1,481 @@
+{
+  "page": 1,
+  "results": [
+    {
+      "adult": false,
+      "backdrop_path": "/etoVmQauLgUnu34qlqUPlOkevZO.jpg",
+      "genre_ids": [
+        10765,
+        10759,
+        18
+      ],
+      "id": 92830,
+      "media_type": "tv",
+      "name": "Obi-Wan Kenobi",
+      "origin_country": [
+        "US"
+      ],
+      "original_language": "en",
+      "original_name": "Obi-Wan Kenobi",
+      "overview": "During the reign of the Galactic Empire, former Jedi Master, Obi-Wan Kenobi, embarks on a crucial mission to confront allies turned enemies and face the wrath of the Empire.",
+      "popularity": 1839.226,
+      "poster_path": "/qJRB789ceLryrLvOKrZqLKr2CGf.jpg",
+      "first_air_date": "2022-05-26",
+      "vote_average": 7.792,
+      "vote_count": 456
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/rlCRM7U5g2hcU1O8ylGcqsMYHIP.jpg",
+      "genre_ids": [
+        10765,
+        10759,
+        35
+      ],
+      "id": 92782,
+      "media_type": "tv",
+      "name": "Ms. Marvel",
+      "origin_country": [
+        "US"
+      ],
+      "original_language": "en",
+      "original_name": "Ms. Marvel",
+      "overview": "A great student, avid gamer, and voracious fan-fic scribe, Kamala Khan has a special affinity for superheroes, particularly Captain Marvel. However, she struggles to fit in at home and at school — that is, until she gets superpowers like the heroes she’s always looked up to. Life is easier with superpowers, right?",
+      "popularity": 1933.888,
+      "poster_path": "/cdkyMYdu8ao26XOBvilNzLneUg1.jpg",
+      "first_air_date": "2022-06-08",
+      "vote_average": 7.761,
+      "vote_count": 180
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/9ijMGlJKqcslswWUzTEwScm82Gs.jpg",
+      "genre_ids": [
+        10765,
+        10759,
+        18
+      ],
+      "id": 82856,
+      "media_type": "tv",
+      "name": "The Mandalorian",
+      "origin_country": [
+        "US"
+      ],
+      "original_language": "en",
+      "original_name": "The Mandalorian",
+      "overview": "After the fall of the Galactic Empire, lawlessness has spread throughout the galaxy. A lone gunfighter makes his way through the outer reaches, earning his keep as a bounty hunter.",
+      "popularity": 220.812,
+      "poster_path": "/sWgBv7LV2PRoQgkxwlibdGXKz1S.jpg",
+      "first_air_date": "2019-11-12",
+      "vote_average": 8.49,
+      "vote_count": 7649
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/d5rjvv6J2VGgbNlSU2K7cmo8NhX.jpg",
+      "genre_ids": [
+        35
+      ],
+      "id": 196098,
+      "media_type": "tv",
+      "name": "Ramez Movie Star",
+      "origin_country": [
+        "EG"
+      ],
+      "original_language": "ar",
+      "original_name": "رامز موڤي ستار",
+      "overview": "Ramez and co-host Jean-Claude Van Damme trick the stars into thinking they’ll shoot an action-packed movie/ad with the superstar before the actual stunt begins.",
+      "popularity": 2.834,
+      "poster_path": "/jkwv8b1lJKtpdmt0yf3G3e3i0Nu.jpg",
+      "first_air_date": "2022-04-02",
+      "vote_average": 5.2,
+      "vote_count": 8
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/56v2KjBlU4XaOv9rVYEQypROD7P.jpg",
+      "genre_ids": [
+        18,
+        10765,
+        9648
+      ],
+      "id": 66732,
+      "media_type": "tv",
+      "name": "Stranger Things",
+      "origin_country": [
+        "US"
+      ],
+      "original_language": "en",
+      "original_name": "Stranger Things",
+      "overview": "When a young boy vanishes, a small town uncovers a mystery involving secret experiments, terrifying supernatural forces, and one strange little girl.",
+      "popularity": 2541.868,
+      "poster_path": "/49WJfeN0moxb9IPfGn8AIqMGskD.jpg",
+      "first_air_date": "2016-07-15",
+      "vote_average": 8.61,
+      "vote_count": 11200
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/jBJWaqoSCiARWtfV0GlqHrcdidd.jpg",
+      "genre_ids": [
+        10765,
+        18,
+        10759
+      ],
+      "id": 71912,
+      "media_type": "tv",
+      "name": "The Witcher",
+      "origin_country": [
+        "US"
+      ],
+      "original_language": "en",
+      "original_name": "The Witcher",
+      "overview": "Geralt of Rivia, a mutated monster-hunter for hire, journeys toward his destiny in a turbulent world where people often prove more wicked than beasts.",
+      "popularity": 129.96,
+      "poster_path": "/7vjaCdMw15FEbXyLQTVa04URsPm.jpg",
+      "first_air_date": "2019-12-20",
+      "vote_average": 8.24,
+      "vote_count": 3795
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/opibPvgRWUbZpu7csgCqxzgemTf.jpg",
+      "genre_ids": [
+        10759,
+        35,
+        16,
+        10765
+      ],
+      "id": 98545,
+      "media_type": "tv",
+      "name": "Minecraft: Story Mode",
+      "origin_country": [
+        "US",
+        "SE"
+      ],
+      "original_language": "en",
+      "original_name": "Minecraft: Story Mode",
+      "overview": "Take control of an adventure set in the Minecraft universe. The future of the world is at stake, and your decisions shape the story -- so choose wisely!",
+      "popularity": 15.537,
+      "poster_path": "/lIFdBogazScckoSyA68JRt8RyXp.jpg",
+      "first_air_date": "2015-10-13",
+      "vote_average": 8.3,
+      "vote_count": 10
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/nNB8ST1cCslJLPI9Uhn5uVht2Dd.jpg",
+      "genre_ids": [
+        18,
+        9648
+      ],
+      "id": 155231,
+      "media_type": "tv",
+      "name": "Link: Eat, Love, Kill",
+      "origin_country": [
+        "KR"
+      ],
+      "original_language": "ko",
+      "original_name": "링크: 먹고, 사랑하라, 죽이게",
+      "overview": "A fantasy mystery drama about a man and woman who share the same emotional state.\n\nEun Gye Hoon is a chef who sets up a restaurant in the town where his twin sister went missing 20 years ago. He finds himself randomly experiencing emotions one day, spontaneously crying and laughing, and it turns out that they are the emotions of a woman named Noh Da Hyun.",
+      "popularity": 136.529,
+      "poster_path": "/lyQQFIbDsdSBYpxG2EcS7gGEZ5j.jpg",
+      "first_air_date": "2022-06-06",
+      "vote_average": 8.3,
+      "vote_count": 3
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/7cHaoIL4uSBfRbDZLEHoDb2ZPKW.jpg",
+      "genre_ids": [
+        99,
+        35
+      ],
+      "id": 114066,
+      "media_type": "tv",
+      "name": "The G Word with Adam Conover",
+      "origin_country": [
+        "US"
+      ],
+      "original_language": "en",
+      "original_name": "The G Word with Adam Conover",
+      "overview": "Love it or hate it, the government plays a huge role in our lives. Adam Conover explores its triumphs, failures and how we might be able to change it.",
+      "popularity": 3.851,
+      "poster_path": "/mtS2gpkWjgvd7851xAeFVINq2LX.jpg",
+      "first_air_date": "2022-05-19",
+      "vote_average": 5.4,
+      "vote_count": 5
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/ciToI1GfkWmzavJIPXh9Xe0Neon.jpg",
+      "genre_ids": [
+        10759,
+        10765,
+        18
+      ],
+      "id": 75006,
+      "media_type": "tv",
+      "name": "The Umbrella Academy",
+      "origin_country": [
+        "US"
+      ],
+      "original_language": "en",
+      "original_name": "The Umbrella Academy",
+      "overview": "A dysfunctional family of superheroes comes together to solve the mystery of their father's death, the threat of the apocalypse and more.",
+      "popularity": 2208.709,
+      "poster_path": "/scZlQQYnDVlnpxFTxaIv2g0BWnL.jpg",
+      "first_air_date": "2019-02-15",
+      "vote_average": 8.698,
+      "vote_count": 7951
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/1qpUk27LVI9UoTS7S0EixUBj5aR.jpg",
+      "genre_ids": [
+        10759,
+        10765
+      ],
+      "id": 52814,
+      "media_type": "tv",
+      "name": "Halo",
+      "origin_country": [
+        "US"
+      ],
+      "original_language": "en",
+      "original_name": "Halo",
+      "overview": "Depicting an epic 26th-century conflict between humanity and an alien threat known as the Covenant, the series weaves deeply drawn personal stories with action, adventure and a richly imagined vision of the future.",
+      "popularity": 1603.976,
+      "poster_path": "/nJUHX3XL1jMkk8honUZnUmudFb9.jpg",
+      "first_air_date": "2022-03-24",
+      "vote_average": 8.556,
+      "vote_count": 1003
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/gWXJk4zpVE1T7g78orYqDoWwQfI.jpg",
+      "genre_ids": [
+        10765,
+        18
+      ],
+      "id": 111894,
+      "media_type": "tv",
+      "name": "Night Sky",
+      "origin_country": [
+        "US"
+      ],
+      "original_language": "en",
+      "original_name": "Night Sky",
+      "overview": "Irene and Franklin York, a retired couple, have a secret: a Chamber buried in their backyard that miraculously leads to a strange, deserted planet. When an enigmatic young man arrives, the Yorks quiet existence is upended and the mysterious Chamber they thought they knew so well turns out to be much more than they could have ever imagined.",
+      "popularity": 32.553,
+      "poster_path": "/juwOjcai3aYJvybwAhLS79miHq1.jpg",
+      "first_air_date": "2022-05-19",
+      "vote_average": 7.67,
+      "vote_count": 44
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/fh2CStc3fKFYhkKOFyUHBGksRWj.jpg",
+      "genre_ids": [
+        80,
+        18,
+        10759,
+        10765
+      ],
+      "id": 79788,
+      "media_type": "tv",
+      "name": "Watchmen",
+      "origin_country": [
+        "US"
+      ],
+      "original_language": "en",
+      "original_name": "Watchmen",
+      "overview": "Set in an alternate history where “superheroes” are treated as outlaws, “Watchmen” embraces the nostalgia of the original groundbreaking graphic novel while attempting to break new ground of its own.",
+      "popularity": 27.427,
+      "poster_path": "/m8rWq3j73ZGhDuSCZWMMoE9ePH1.jpg",
+      "first_air_date": "2019-10-20",
+      "vote_average": 7.806,
+      "vote_count": 894
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/rzAzvWJoZSwVSswvWsKx1lqT63m.jpg",
+      "genre_ids": [
+        10765
+      ],
+      "id": 103516,
+      "media_type": "tv",
+      "name": "Star Trek: Strange New Worlds",
+      "origin_country": [
+        "US"
+      ],
+      "original_language": "en",
+      "original_name": "Star Trek: Strange New Worlds",
+      "overview": "Follow Christopher Pike, Spock and Number One in the years before Captain Kirk boarded the U.S.S. Enterprise, as they explore new worlds around the galaxy. This show is a prequel to the original series and Star Trek: Discovery.",
+      "popularity": 472.615,
+      "poster_path": "/iwIdajr5Y4zq2ibvq75VnDAJBr.jpg",
+      "first_air_date": "2022-05-05",
+      "vote_average": 8.109,
+      "vote_count": 96
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/xLWYkefC1wjRlnLKrKvaH6LrfQM.jpg",
+      "genre_ids": [
+        10759,
+        10765,
+        9648
+      ],
+      "id": 92749,
+      "media_type": "tv",
+      "name": "Moon Knight",
+      "origin_country": [
+        "US"
+      ],
+      "original_language": "en",
+      "original_name": "Moon Knight",
+      "overview": "When Steven Grant, a mild-mannered gift-shop employee, becomes plagued with blackouts and memories of another life, he discovers he has dissociative identity disorder and shares a body with mercenary Marc Spector. As Steven/Marc’s enemies converge upon them, they must navigate their complex identities while thrust into a deadly mystery among the powerful gods of Egypt.",
+      "popularity": 1104.643,
+      "poster_path": "/vKDUmKO6F9bSKKyHhg7YGbgcEeF.jpg",
+      "first_air_date": "2022-03-30",
+      "vote_average": 8.18,
+      "vote_count": 1121
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/6UH52Fmau8RPsMAbQbjwN3wJSCj.jpg",
+      "genre_ids": [
+        16,
+        10765,
+        10759,
+        18
+      ],
+      "id": 95557,
+      "media_type": "tv",
+      "name": "Invincible",
+      "origin_country": [
+        "US"
+      ],
+      "original_language": "en",
+      "original_name": "Invincible",
+      "overview": "Mark Grayson is a normal teenager except for the fact that his father is the most powerful superhero on the planet. Shortly after his seventeenth birthday, Mark begins to develop powers of his own and enters into his father’s tutelage.",
+      "popularity": 161.863,
+      "poster_path": "/yDWJYRAwMNKbIYT8ZB33qy84uzO.jpg",
+      "first_air_date": "2021-03-25",
+      "vote_average": 8.808,
+      "vote_count": 3007
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/nBrkOZyI75artyizuBFeya48KbO.jpg",
+      "genre_ids": [
+        16,
+        10765
+      ],
+      "id": 86831,
+      "media_type": "tv",
+      "name": "Love, Death & Robots",
+      "origin_country": [
+        "US"
+      ],
+      "original_language": "en",
+      "original_name": "Love, Death & Robots",
+      "overview": "Terrifying creatures, wicked surprises and dark comedy converge in this NSFW anthology of animated stories presented by Tim Miller and David Fincher.",
+      "popularity": 206.825,
+      "poster_path": "/cRiDlzzZC5lL7fvImuSjs04SUIJ.jpg",
+      "first_air_date": "2019-03-15",
+      "vote_average": 8.253,
+      "vote_count": 1917
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/9yKCJTOh9m3Lol2RY3kw99QPH6x.jpg",
+      "genre_ids": [
+        10765,
+        18
+      ],
+      "id": 68507,
+      "media_type": "tv",
+      "name": "His Dark Materials",
+      "origin_country": [
+        "GB"
+      ],
+      "original_language": "en",
+      "original_name": "His Dark Materials",
+      "overview": "Lyra is an orphan who lives in a parallel universe in which science, theology and magic are entwined. Her search for a kidnapped friend uncovers a sinister plot involving stolen children, and turns into a quest to understand a mysterious phenomenon called Dust. She is later joined on her journey by Will, a boy who possesses a knife that can cut windows between worlds. As she learns the truth about her parents and her prophesied destiny, the two young people are caught up in a war against celestial powers that ranges across many worlds.",
+      "popularity": 60.668,
+      "poster_path": "/g6tIKGc3f1H5QMz1dcgCwADKpZ7.jpg",
+      "first_air_date": "2019-11-03",
+      "vote_average": 8.028,
+      "vote_count": 1091
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/kkgomBlNN9UvPhNGQmVMpOwAnXG.jpg",
+      "genre_ids": [
+        10765,
+        18
+      ],
+      "id": 79501,
+      "media_type": "tv",
+      "name": "Doom Patrol",
+      "origin_country": [
+        "US"
+      ],
+      "original_language": "en",
+      "original_name": "Doom Patrol",
+      "overview": "The Doom Patrol’s members each suffered horrible accidents that gave them superhuman abilities — but also left them scarred and disfigured. Traumatized and downtrodden, the team found purpose through The Chief, who brought them together to investigate the weirdest phenomena in existence — and to protect Earth from what they find.",
+      "popularity": 64.607,
+      "poster_path": "/kOAn06LmRCg4YiSStwrGL6UOQ3a.jpg",
+      "first_air_date": "2019-02-15",
+      "vote_average": 7.6,
+      "vote_count": 1047
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/vNpuAxGTl9HsUbHqam3E9CzqCvX.jpg",
+      "genre_ids": [
+        35
+      ],
+      "id": 2316,
+      "media_type": "tv",
+      "name": "The Office",
+      "origin_country": [
+        "US"
+      ],
+      "original_language": "en",
+      "original_name": "The Office",
+      "overview": "The everyday lives of office employees in the Scranton, Pennsylvania branch of the fictional Dunder Mifflin Paper Company.",
+      "popularity": 153.267,
+      "poster_path": "/qWnJzyZhyy74gjpSjIXWmuk0ifX.jpg",
+      "first_air_date": "2005-03-24",
+      "vote_average": 8.571,
+      "vote_count": 2431
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/uRIiWJ0MrdNjykxl4mp8mXEi308.jpg",
+      "genre_ids": [
+        10759,
+        10765,
+        18
+      ],
+      "id": 75450,
+      "media_type": "tv",
+      "name": "Titans",
+      "origin_country": [
+        "US"
+      ],
+      "original_language": "en",
+      "original_name": "Titans",
+      "overview": "A team of young superheroes led by Nightwing (formerly Batman's first Robin) form to combat evil and other perils.",
+      "popularity": 126.733,
+      "poster_path": "/xKnUNWFsAOaKIviIYBLei02Bauu.jpg",
+      "first_air_date": "2018-10-12",
+      "vote_average": 8.107,
+      "vote_count": 2054
+    }
+  ],
+  "total_pages": 2,
+  "total_results": 40
+}

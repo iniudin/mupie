@@ -28,12 +28,3 @@ class MovieDetailError extends MovieDetailState {
   @override
   List<Object> get props => [message];
 }
-
-class MovieDetailNoData extends MovieDetailState {
-  final String message;
-
-  const MovieDetailNoData(this.message);
-
-  @override
-  List<Object> get props => [message];
-}

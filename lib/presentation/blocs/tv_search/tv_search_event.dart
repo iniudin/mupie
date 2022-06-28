@@ -7,7 +7,7 @@ abstract class TvSearchEvent extends Equatable {
   List<Object> get props => [];
 }
 
-class MovieSetEmpty extends TvSearchEvent {}
+class TvSetEmpty extends TvSearchEvent {}
 
 class TvTextChanged extends TvSearchEvent {
   final String query;

@@ -14,6 +14,4 @@ class GetMovieRecommendation extends MovieRecommendationEvent {
 
   @override
   List<Object> get props => [id];
-
-  add(GetMovieRecommendation getMovieRecommendation) {}
 }

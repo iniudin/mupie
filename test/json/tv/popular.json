@@ -1,0 +1,414 @@
+{
+  "page": 1,
+  "results": [
+    {
+      "backdrop_path": "/n6vVs6z8obNbExdD3QHTr4Utu1Z.jpg",
+      "first_air_date": "2019-07-25",
+      "genre_ids": [
+        10765,
+        10759
+      ],
+      "id": 76479,
+      "name": "The Boys",
+      "origin_country": [
+        "US"
+      ],
+      "original_language": "en",
+      "original_name": "The Boys",
+      "overview": "A group of vigilantes known informally as “The Boys” set out to take down corrupt superheroes with no more than blue-collar grit and a willingness to fight dirty.",
+      "popularity": 4083.349,
+      "poster_path": "/stTEycfG9928HYGEISBFaG1ngjM.jpg",
+      "vote_average": 8.4,
+      "vote_count": 6245
+    },
+    {
+      "backdrop_path": "/56v2KjBlU4XaOv9rVYEQypROD7P.jpg",
+      "first_air_date": "2016-07-15",
+      "genre_ids": [
+        18,
+        10765,
+        9648
+      ],
+      "id": 66732,
+      "name": "Stranger Things",
+      "origin_country": [
+        "US"
+      ],
+      "original_language": "en",
+      "original_name": "Stranger Things",
+      "overview": "When a young boy vanishes, a small town uncovers a mystery involving secret experiments, terrifying supernatural forces, and one strange little girl.",
+      "popularity": 2541.868,
+      "poster_path": "/49WJfeN0moxb9IPfGn8AIqMGskD.jpg",
+      "vote_average": 8.6,
+      "vote_count": 11185
+    },
+    {
+      "backdrop_path": "/rlCRM7U5g2hcU1O8ylGcqsMYHIP.jpg",
+      "first_air_date": "2022-06-08",
+      "genre_ids": [
+        10765,
+        10759,
+        35
+      ],
+      "id": 92782,
+      "name": "Ms. Marvel",
+      "origin_country": [
+        "US"
+      ],
+      "original_language": "en",
+      "original_name": "Ms. Marvel",
+      "overview": "A great student, avid gamer, and voracious fan-fic scribe, Kamala Khan has a special affinity for superheroes, particularly Captain Marvel. However, she struggles to fit in at home and at school — that is, until she gets superpowers like the heroes she’s always looked up to. Life is easier with superpowers, right?",
+      "popularity": 1933.888,
+      "poster_path": "/cdkyMYdu8ao26XOBvilNzLneUg1.jpg",
+      "vote_average": 7.8,
+      "vote_count": 178
+    },
+    {
+      "backdrop_path": "/etoVmQauLgUnu34qlqUPlOkevZO.jpg",
+      "first_air_date": "2022-05-26",
+      "genre_ids": [
+        10765,
+        10759,
+        18
+      ],
+      "id": 92830,
+      "name": "Obi-Wan Kenobi",
+      "origin_country": [
+        "US"
+      ],
+      "original_language": "en",
+      "original_name": "Obi-Wan Kenobi",
+      "overview": "During the reign of the Galactic Empire, former Jedi Master, Obi-Wan Kenobi, embarks on a crucial mission to confront allies turned enemies and face the wrath of the Empire.",
+      "popularity": 1839.226,
+      "poster_path": "/qJRB789ceLryrLvOKrZqLKr2CGf.jpg",
+      "vote_average": 7.8,
+      "vote_count": 452
+    },
+    {
+      "backdrop_path": "/wiE9doxiLwq3WCGamDIOb2PqBqc.jpg",
+      "first_air_date": "2013-09-12",
+      "genre_ids": [
+        18,
+        80
+      ],
+      "id": 60574,
+      "name": "Peaky Blinders",
+      "origin_country": [
+        "GB"
+      ],
+      "original_language": "en",
+      "original_name": "Peaky Blinders",
+      "overview": "A gangster family epic set in 1919 Birmingham, England and centered on a gang who sew razor blades in the peaks of their caps, and their fierce boss Tommy Shelby, who means to move up in the world.",
+      "popularity": 1681.185,
+      "poster_path": "/vUUqzWa2LnHIVqkaKVlVGkVcZIW.jpg",
+      "vote_average": 8.6,
+      "vote_count": 6748
+    },
+    {
+      "backdrop_path": "/zNugnnR5KEmq9EzLcl0Me1UmHYk.jpg",
+      "first_air_date": "2022-04-09",
+      "genre_ids": [
+        16,
+        35,
+        10759,
+        80
+      ],
+      "id": 120089,
+      "name": "SPY x FAMILY",
+      "origin_country": [
+        "JP"
+      ],
+      "original_language": "ja",
+      "original_name": "SPY×FAMILY",
+      "overview": "Master spy Twilight is the best at what he does when it comes to going undercover on dangerous missions in the name of a better world. But when he receives the ultimate impossible assignment—get married and have a kid—he may finally be in over his head! Not one to depend on others, Twilight has his work cut out for him procuring both a wife and a child for his mission to infiltrate an elite private school. What he doesn't know is that the wife he's chosen is an assassin and the child he's adopted is a telepath!",
+      "popularity": 1607.062,
+      "poster_path": "/3r4LYFuXrg3G8fepysr4xSLWnQL.jpg",
+      "vote_average": 8.6,
+      "vote_count": 311
+    },
+    {
+      "backdrop_path": "/ciToI1GfkWmzavJIPXh9Xe0Neon.jpg",
+      "first_air_date": "2019-02-15",
+      "genre_ids": [
+        10759,
+        10765,
+        18
+      ],
+      "id": 75006,
+      "name": "The Umbrella Academy",
+      "origin_country": [
+        "US"
+      ],
+      "original_language": "en",
+      "original_name": "The Umbrella Academy",
+      "overview": "A dysfunctional family of superheroes comes together to solve the mystery of their father's death, the threat of the apocalypse and more.",
+      "popularity": 2208.709,
+      "poster_path": "/scZlQQYnDVlnpxFTxaIv2g0BWnL.jpg",
+      "vote_average": 8.7,
+      "vote_count": 7941
+    },
+    {
+      "backdrop_path": "/1qpUk27LVI9UoTS7S0EixUBj5aR.jpg",
+      "first_air_date": "2022-03-24",
+      "genre_ids": [
+        10759,
+        10765
+      ],
+      "id": 52814,
+      "name": "Halo",
+      "origin_country": [
+        "US"
+      ],
+      "original_language": "en",
+      "original_name": "Halo",
+      "overview": "Depicting an epic 26th-century conflict between humanity and an alien threat known as the Covenant, the series weaves deeply drawn personal stories with action, adventure and a richly imagined vision of the future.",
+      "popularity": 1603.976,
+      "poster_path": "/nJUHX3XL1jMkk8honUZnUmudFb9.jpg",
+      "vote_average": 8.6,
+      "vote_count": 999
+    },
+    {
+      "backdrop_path": "/xLWYkefC1wjRlnLKrKvaH6LrfQM.jpg",
+      "first_air_date": "2022-03-30",
+      "genre_ids": [
+        10759,
+        10765,
+        9648
+      ],
+      "id": 92749,
+      "name": "Moon Knight",
+      "origin_country": [
+        "US"
+      ],
+      "original_language": "en",
+      "original_name": "Moon Knight",
+      "overview": "When Steven Grant, a mild-mannered gift-shop employee, becomes plagued with blackouts and memories of another life, he discovers he has dissociative identity disorder and shares a body with mercenary Marc Spector. As Steven/Marc’s enemies converge upon them, they must navigate their complex identities while thrust into a deadly mystery among the powerful gods of Egypt.",
+      "popularity": 1104.643,
+      "poster_path": "/vKDUmKO6F9bSKKyHhg7YGbgcEeF.jpg",
+      "vote_average": 8.2,
+      "vote_count": 1118
+    },
+    {
+      "backdrop_path": "/dpzC0ACzwkVporKvzZGvNFOBFr6.jpg",
+      "first_air_date": "2005-03-27",
+      "genre_ids": [
+        18
+      ],
+      "id": 1416,
+      "name": "Grey's Anatomy",
+      "origin_country": [
+        "US"
+      ],
+      "original_language": "en",
+      "original_name": "Grey's Anatomy",
+      "overview": "Follows the personal and professional lives of a group of doctors at Seattle’s Grey Sloan Memorial Hospital.",
+      "popularity": 848.451,
+      "poster_path": "/zPIug5giU8oug6Xes5K1sTfQJxY.jpg",
+      "vote_average": 8.3,
+      "vote_count": 8123
+    },
+    {
+      "backdrop_path": "/xlKKD1TXJvh0YYlVPqqQ3g3ZUjM.jpg",
+      "first_air_date": "2018-07-01",
+      "genre_ids": [
+        16,
+        10759,
+        10765
+      ],
+      "id": 80020,
+      "name": "Super Dragon Ball Heroes",
+      "origin_country": [
+        "JP"
+      ],
+      "original_language": "ja",
+      "original_name": "スーパードラゴンボールヒーローズ",
+      "overview": "Trunks returns from the future to train with Goku and Vegeta. However, it disappears without warning. Then the mysterious Fu bursts in, telling them that Trunks has been imprisoned in the Prison Planet, a mysterious complex in an unknown place in the universes. The group seeks the dragon balls to free Trunks, but an endless battle awaits them! Will Goku and the others rescue Trunks and escape the Prison Planet?",
+      "popularity": 871.397,
+      "poster_path": "/jYeTfpxS3IzgqKkYCjmdCKwq8PW.jpg",
+      "vote_average": 7.5,
+      "vote_count": 2604
+    },
+    {
+      "backdrop_path": "/1WX8kxIIECPNAqbieVurqfpjxoo.jpg",
+      "first_air_date": "2022-05-30",
+      "genre_ids": [
+        35,
+        10759,
+        10766
+      ],
+      "id": 197189,
+      "name": "Cara e Coragem",
+      "origin_country": [
+        "BR"
+      ],
+      "original_language": "pt",
+      "original_name": "Cara e Coragem",
+      "overview": "",
+      "popularity": 1176.041,
+      "poster_path": "/8CXbCCGiJxi4AXPBQ1QPrehMIGG.jpg",
+      "vote_average": 1,
+      "vote_count": 1
+    },
+    {
+      "backdrop_path": "/41yaWnIT8AjIHiULHtTbKNzZTjc.jpg",
+      "first_air_date": "2014-10-07",
+      "genre_ids": [
+        18,
+        10765
+      ],
+      "id": 60735,
+      "name": "The Flash",
+      "origin_country": [
+        "US"
+      ],
+      "original_language": "en",
+      "original_name": "The Flash",
+      "overview": "After a particle accelerator causes a freak storm, CSI Investigator Barry Allen is struck by lightning and falls into a coma. Months later he awakens with the power of super speed, granting him the ability to move through Central City like an unseen guardian angel. Though initially excited by his newfound powers, Barry is shocked to discover he is not the only \"meta-human\" who was created in the wake of the accelerator explosion -- and not everyone is using their new powers for good. Barry partners with S.T.A.R. Labs and dedicates his life to protect the innocent. For now, only a few close friends and associates know that Barry is literally the fastest man alive, but it won't be long before the world learns what Barry Allen has become...The Flash.",
+      "popularity": 846.996,
+      "poster_path": "/lJA2RCMfsWoskqlQhXPSLFQGXEJ.jpg",
+      "vote_average": 7.8,
+      "vote_count": 9729
+    },
+    {
+      "backdrop_path": "/AnfXhKJwb9rBa8cvPBV54XgJxMF.jpg",
+      "first_air_date": "2022-03-28",
+      "genre_ids": [
+        18,
+        10766
+      ],
+      "id": 158415,
+      "name": "Pantanal",
+      "origin_country": [
+        "BR"
+      ],
+      "original_language": "pt",
+      "original_name": "Pantanal",
+      "overview": "After the mysterious disappearance of his father, Joventino, the cowboy José Leôncio becomes a wealthy farm owner in Pantanal. Over twenty years have passed and, bitter-hearted because of his father vanishing and the escape of his wife to Rio de Janeiro with his baby, José Leôncio has the chance to make amends with the boy, now a young man raised in the big city with very different values and habits than his own.",
+      "popularity": 1116.815,
+      "poster_path": "/4Ru1BwcAKWtpM345dWe8YgHf35V.jpg",
+      "vote_average": 4.7,
+      "vote_count": 23
+    },
+    {
+      "backdrop_path": "/ktDJ21QQscbMNQfPpZBsNORxdDx.jpg",
+      "first_air_date": "2016-01-25",
+      "genre_ids": [
+        80,
+        10765
+      ],
+      "id": 63174,
+      "name": "Lucifer",
+      "origin_country": [
+        "US"
+      ],
+      "original_language": "en",
+      "original_name": "Lucifer",
+      "overview": "Bored and unhappy as the Lord of Hell, Lucifer Morningstar abandoned his throne and retired to Los Angeles, where he has teamed up with LAPD detective Chloe Decker to take down criminals. But the longer he's away from the underworld, the greater the threat that the worst of humanity could escape.",
+      "popularity": 799.114,
+      "poster_path": "/ekZobS8isE6mA53RAiGDG93hBxL.jpg",
+      "vote_average": 8.5,
+      "vote_count": 12009
+    },
+    {
+      "backdrop_path": "/8Xs20y8gFR0W9u8Yy9NKdpZtSu7.jpg",
+      "first_air_date": "2022-01-28",
+      "genre_ids": [
+        10759,
+        18,
+        10765
+      ],
+      "id": 99966,
+      "name": "All of Us Are Dead",
+      "origin_country": [
+        "KR"
+      ],
+      "original_language": "ko",
+      "original_name": "지금 우리 학교는",
+      "overview": "A high school becomes ground zero for a zombie virus outbreak. Trapped students must fight their way out — or turn into one of the rabid infected.",
+      "popularity": 757.175,
+      "poster_path": "/pTEFqAjLd5YTsMD6NSUxV6Dq7A6.jpg",
+      "vote_average": 8.5,
+      "vote_count": 2280
+    },
+    {
+      "backdrop_path": "/pNL5yrdXsMWA4jJMtzRxtLOVaCM.jpg",
+      "first_air_date": "2021-04-11",
+      "genre_ids": [
+        10764
+      ],
+      "id": 121726,
+      "name": "Love Island Spain",
+      "origin_country": [
+        "ES"
+      ],
+      "original_language": "es",
+      "original_name": "Love Island España",
+      "overview": "",
+      "popularity": 989.247,
+      "poster_path": "/t8HcfOCBgOONjfuHAIzuJglnAZS.jpg",
+      "vote_average": 2,
+      "vote_count": 1
+    },
+    {
+      "backdrop_path": "/6Ys6koNajP5ld9EIMfOSQrRquki.jpg",
+      "first_air_date": "2017-09-25",
+      "genre_ids": [
+        18
+      ],
+      "id": 71712,
+      "name": "The Good Doctor",
+      "origin_country": [
+        "US"
+      ],
+      "original_language": "en",
+      "original_name": "The Good Doctor",
+      "overview": "Shaun Murphy, a young surgeon with autism and savant syndrome, relocates from a quiet country life to join a prestigious hospital's surgical unit. Unable to personally connect with those around him, Shaun uses his extraordinary medical gifts to save lives and challenge the skepticism of his colleagues.",
+      "popularity": 629.546,
+      "poster_path": "/cXUqtadGsIcZDWUTrfnbDjAy8eN.jpg",
+      "vote_average": 8.5,
+      "vote_count": 10595
+    },
+    {
+      "backdrop_path": "/1O88Usqonn3xfNGUGluc9YVI0Dl.jpg",
+      "first_air_date": "2022-06-07",
+      "genre_ids": [
+        18
+      ],
+      "id": 203617,
+      "name": "Nice To Meet You Again",
+      "origin_country": [
+        "CN"
+      ],
+      "original_language": "zh",
+      "original_name": "林深见鹿",
+      "overview": "",
+      "popularity": 358.636,
+      "poster_path": "/nnLQxU6Yi1nrsDYxsNm8oTMpOfp.jpg",
+      "vote_average": 0,
+      "vote_count": 0
+    },
+    {
+      "backdrop_path": "/wvdWb5kTQipdMDqCclC6Y3zr4j3.jpg",
+      "first_air_date": "2010-10-31",
+      "genre_ids": [
+        10759,
+        18,
+        10765
+      ],
+      "id": 1402,
+      "name": "The Walking Dead",
+      "origin_country": [
+        "US"
+      ],
+      "original_language": "en",
+      "original_name": "The Walking Dead",
+      "overview": "Sheriff's deputy Rick Grimes awakens from a coma to find a post-apocalyptic world dominated by flesh-eating zombies. He sets out to find his family and encounters many other survivors along the way.",
+      "popularity": 624.039,
+      "poster_path": "/xf9wuDcqlUPWABZNeDKPbZUjWx0.jpg",
+      "vote_average": 8.1,
+      "vote_count": 13189
+    }
+  ],
+  "total_pages": 6717,
+  "total_results": 134332
+}
