@@ -83,6 +83,7 @@ class MyApp extends StatelessWidget {
         ),
       ],
       child: MaterialApp(
+        debugShowCheckedModeBanner: false,
         title: 'Ditonton App',
         theme: ThemeData.dark().copyWith(
           colorScheme: kColorScheme,

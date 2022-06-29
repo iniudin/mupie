@@ -27,11 +27,11 @@ class _WatchlistPageState extends State<WatchlistPage> with RouteAware {
   }
 
   @override
-  void didPop() {
+  void didPopNext() {
     Future.microtask(() {
       context.read<WatchlistBloc>().add(const GetList());
     });
-    super.didPop();
+    super.didPopNext();
   }
 
   @override

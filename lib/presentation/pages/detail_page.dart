@@ -9,6 +9,7 @@ import 'package:ditonton/presentation/blocs/tv_detail/tv_detail_bloc.dart';
 import 'package:ditonton/presentation/blocs/tv_recommendation/tv_recommendation_bloc.dart';
 import 'package:ditonton/presentation/blocs/watchlist/watchlist_bloc.dart';
 import 'package:ditonton/presentation/widgets/item_list_card.dart';
+import 'package:ditonton/utils/route/route_helper.dart';
 import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
@@ -307,12 +308,34 @@ class DetailPageState extends State<DetailPage> with RouteAware {
                     scrollDirection: Axis.horizontal,
                     itemBuilder: (context, index) {
                       final item = state.movieList[index];
-                      return ItemListCard(
-                        id: item.id,
-                        title: item.title,
-                        overview: item.overview,
-                        posterPath: item.posterPath,
-                        isMovie: 1,
+                      return Container(
+                        padding: const EdgeInsets.all(8),
+                        child: InkWell(
+                          onTap: () {
+                            Navigator.pushReplacementNamed(
+                              context,
+                              detailRoute,
+                              arguments: ContentArguments(
+                                id: item.id,
+                                title: item.title,
+                                overview: item.overview,
+                                posterPath: item.posterPath,
+                                isMovie: widget.arguments.isMovie,
+                              ),
+                            );
+                          },
+                          child: ClipRRect(
+                            borderRadius:
+                                const BorderRadius.all(Radius.circular(16)),
+                            child: CachedNetworkImage(
+                              imageUrl: '$baseImageUrl${item.posterPath}',
+                              placeholder: (context, url) => const Center(
+                                  child: CircularProgressIndicator()),
+                              errorWidget: (context, url, error) =>
+                                  const Center(child: Icon(Icons.error)),
+                            ),
+                          ),
+                        ),
                       );
                     },
                     itemCount: state.movieList.length,
@@ -336,12 +359,34 @@ class DetailPageState extends State<DetailPage> with RouteAware {
                     scrollDirection: Axis.horizontal,
                     itemBuilder: (context, index) {
                       final item = state.tvList[index];
-                      return ItemListCard(
-                        id: item.id,
-                        title: item.title,
-                        overview: item.overview,
-                        posterPath: item.posterPath,
-                        isMovie: 0,
+                      return Container(
+                        padding: const EdgeInsets.all(8),
+                        child: InkWell(
+                          onTap: () {
+                            Navigator.pushReplacementNamed(
+                              context,
+                              detailRoute,
+                              arguments: ContentArguments(
+                                id: item.id,
+                                title: item.title,
+                                overview: item.overview,
+                                posterPath: item.posterPath,
+                                isMovie: widget.arguments.isMovie,
+                              ),
+                            );
+                          },
+                          child: ClipRRect(
+                            borderRadius:
+                                const BorderRadius.all(Radius.circular(16)),
+                            child: CachedNetworkImage(
+                              imageUrl: '$baseImageUrl${item.posterPath}',
+                              placeholder: (context, url) => const Center(
+                                  child: CircularProgressIndicator()),
+                              errorWidget: (context, url, error) =>
+                                  const Center(child: Icon(Icons.error)),
+                            ),
+                          ),
+                        ),
                       );
                     },
                     itemCount: state.tvList.length,
