@@ -24,33 +24,32 @@ import 'package:ditonton/presentation/blocs/tv_search/tv_search_bloc.dart';
 import 'package:ditonton/presentation/blocs/tv_top_rated/tv_top_rated_bloc.dart';
 import 'package:mockito/annotations.dart';
 import 'package:http/http.dart' as http;
-import 'package:mocktail/mocktail.dart' as tail;
+import 'package:mockito/mockito.dart';
 
-class MockMovieOnPlayingBloc extends tail.Mock implements MovieOnPlayingBloc {}
+class MockMovieOnPlayingBloc extends Fake implements MovieOnPlayingBloc {}
 
-class MockMoviePopularBloc extends tail.Mock implements MoviePopularBloc {}
+class MockMoviePopularBloc extends Fake implements MoviePopularBloc {}
 
-class MockMovieTopRatedBloc extends tail.Mock implements MovieTopRatedBloc {}
+class MockMovieTopRatedBloc extends Fake implements MovieTopRatedBloc {}
 
-class MockMovieDetailBloc extends tail.Mock implements MovieDetailBloc {}
+class MockMovieDetailBloc extends Fake implements MovieDetailBloc {}
 
-class MockMovieRecommendationBloc extends tail.Mock
+class MockMovieRecommendationBloc extends Fake
     implements MovieRecommendationBloc {}
 
-class MockMovieSearchBloc extends tail.Mock implements MovieSearchBloc {}
+class MockMovieSearchBloc extends Fake implements MovieSearchBloc {}
 
-class MockTvOnTheAirBloc extends tail.Mock implements TvOnTheAirBloc {}
+class MockTvOnTheAirBloc extends Fake implements TvOnTheAirBloc {}
 
-class MockTvPopularBloc extends tail.Mock implements TvPopularBloc {}
+class MockTvPopularBloc extends Fake implements TvPopularBloc {}
 
-class MockTvTopRatedBloc extends tail.Mock implements TvTopRatedBloc {}
+class MockTvTopRatedBloc extends Fake implements TvTopRatedBloc {}
 
-class MockTvDetailBloc extends tail.Mock implements TvDetailBloc {}
+class MockTvDetailBloc extends Fake implements TvDetailBloc {}
 
-class MockTvRecommendationBloc extends tail.Mock
-    implements TvRecommendationBloc {}
+class MockTvRecommendationBloc extends Mock implements TvRecommendationBloc {}
 
-class MockTvSearchBloc extends tail.Mock implements TvSearchBloc {}
+class MockTvSearchBloc extends Fake implements TvSearchBloc {}
 
 @GenerateMocks([
   DatabaseService,

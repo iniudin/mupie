@@ -2,6 +2,7 @@ import 'package:bloc/bloc.dart';
 import 'package:ditonton/domain/entities/tv.dart';
 import 'package:ditonton/domain/usecases/search.dart';
 import 'package:equatable/equatable.dart';
+// ignore: depend_on_referenced_packages
 import 'package:stream_transform/stream_transform.dart';
 
 part 'tv_search_event.dart';
