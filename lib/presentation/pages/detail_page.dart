@@ -8,7 +8,6 @@ import 'package:ditonton/presentation/blocs/movie_recommendation/movie_recommend
 import 'package:ditonton/presentation/blocs/tv_detail/tv_detail_bloc.dart';
 import 'package:ditonton/presentation/blocs/tv_recommendation/tv_recommendation_bloc.dart';
 import 'package:ditonton/presentation/blocs/watchlist/watchlist_bloc.dart';
-import 'package:ditonton/presentation/widgets/item_list_card.dart';
 import 'package:ditonton/utils/route/route_helper.dart';
 import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
