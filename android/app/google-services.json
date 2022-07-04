@@ -1,33 +1,33 @@
 {
   "project_info": {
-    "project_number": "720786689708",
-    "project_id": "mupie-project",
-    "storage_bucket": "mupie-project.appspot.com"
+    "project_number": "770786559511",
+    "project_id": "ditonton-submission",
+    "storage_bucket": "ditonton-submission.appspot.com"
   },
   "client": [
     {
       "client_info": {
-        "mobilesdk_app_id": "1:720786689708:android:981989b7ef090f355b1909",
+        "mobilesdk_app_id": "1:770786559511:android:e0162fff14ac6256c57e52",
         "android_client_info": {
           "package_name": "com.example.mupie"
         }
       },
       "oauth_client": [
         {
-          "client_id": "720786689708-3g9aa9armcr17uolr3sq56nm8b93pta7.apps.googleusercontent.com",
+          "client_id": "770786559511-m1cdhl8n6jsnc55cinohnlgqrfhv8ace.apps.googleusercontent.com",
           "client_type": 3
         }
       ],
       "api_key": [
         {
-          "current_key": "AIzaSyAjnOjhplj7OTglyL6R5MdMrwsRgbO5xlU"
+          "current_key": "AIzaSyASGYxu7nZJBx9hUt4F9DotW38AWsLz1-c"
         }
       ],
       "services": {
         "appinvite_service": {
           "other_platform_oauth_client": [
             {
-              "client_id": "720786689708-3g9aa9armcr17uolr3sq56nm8b93pta7.apps.googleusercontent.com",
+              "client_id": "770786559511-m1cdhl8n6jsnc55cinohnlgqrfhv8ace.apps.googleusercontent.com",
               "client_type": 3
             }
           ]

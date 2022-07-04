@@ -156,10 +156,12 @@ class DetailPageState extends State<DetailPage> with RouteAware {
         CachedNetworkImage(
           imageUrl: 'https://image.tmdb.org/t/p/w500$posterPath',
           width: screenWidth,
-          placeholder: (context, url) =>
-              const Center(child: CircularProgressIndicator()),
-          errorWidget: (context, url, error) =>
-              const Center(child: Icon(Icons.error_outline)),
+          placeholder: (context, url) => const Center(
+            child: CircularProgressIndicator(),
+          ),
+          errorWidget: (context, url, error) => const Center(
+            child: Icon(Icons.error_outline),
+          ),
         ),
         Container(
           margin: const EdgeInsets.only(top: 48 + 8),
@@ -191,28 +193,28 @@ class DetailPageState extends State<DetailPage> with RouteAware {
                             ElevatedButton(
                               onPressed: () {
                                 isWatchlist
-                                    ? context
-                                        .read<WatchlistBloc>()
-                                        .add(RemoveWatchlist(
-                                          Watchlist(
-                                            id: widget.arguments.id,
-                                            title: title,
-                                            overview: overview,
-                                            posterPath: posterPath,
-                                            isMovie: widget.arguments.isMovie,
+                                    ? context.read<WatchlistBloc>().add(
+                                          RemoveWatchlist(
+                                            Watchlist(
+                                              id: widget.arguments.id,
+                                              title: title,
+                                              overview: overview,
+                                              posterPath: posterPath,
+                                              isMovie: widget.arguments.isMovie,
+                                            ),
                                           ),
-                                        ))
-                                    : context
-                                        .read<WatchlistBloc>()
-                                        .add(AddWatchlist(
-                                          Watchlist(
-                                            id: widget.arguments.id,
-                                            title: title,
-                                            overview: overview,
-                                            posterPath: posterPath,
-                                            isMovie: widget.arguments.isMovie,
+                                        )
+                                    : context.read<WatchlistBloc>().add(
+                                          AddWatchlist(
+                                            Watchlist(
+                                              id: widget.arguments.id,
+                                              title: title,
+                                              overview: overview,
+                                              posterPath: posterPath,
+                                              isMovie: widget.arguments.isMovie,
+                                            ),
                                           ),
-                                        ));
+                                        );
                               },
                               child: Row(
                                 mainAxisSize: MainAxisSize.min,

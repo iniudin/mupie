@@ -1,5 +1,4 @@
 import 'package:ditonton/common/constants.dart';
-import 'package:ditonton/firebase_options.dart';
 import 'package:ditonton/presentation/blocs/movie_detail/movie_detail_bloc.dart';
 import 'package:ditonton/presentation/blocs/movie_on_playing/movie_on_playing_bloc.dart';
 import 'package:ditonton/presentation/blocs/movie_popular/popular_bloc.dart';
@@ -18,20 +17,23 @@ import 'package:ditonton/utils/route/route_helper.dart';
 import 'package:ditonton/utils/route/route_observer_helper.dart';
 import 'package:firebase_core/firebase_core.dart';
 import 'package:flutter/material.dart';
-import 'package:ditonton/injection.dart' as di;
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:firebase_crashlytics/firebase_crashlytics.dart';
+import 'package:firebase_analytics/firebase_analytics.dart';
+import 'package:ditonton/injection.dart' as di;
 
 void main() async {
   WidgetsFlutterBinding.ensureInitialized();
-
-  await Firebase.initializeApp(
-    options: DefaultFirebaseOptions.currentPlatform,
-  );
-
-  FlutterError.onError = FirebaseCrashlytics.instance.recordFlutterFatalError;
-
   di.init();
+  await Firebase.initializeApp();
+  FlutterError.onError = FirebaseCrashlytics.instance.recordFlutterFatalError;
+  await FirebaseAnalytics.instance.logEvent(
+    name: 'app_open',
+    parameters: <String, dynamic>{
+      'app_name': 'Ditonton',
+      'app_version': '1.0.0',
+    },
+  );
   runApp(const MyApp());
 }
 

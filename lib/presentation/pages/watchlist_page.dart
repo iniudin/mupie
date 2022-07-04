@@ -1,3 +1,4 @@
+import 'package:ditonton/common/constants.dart';
 import 'package:ditonton/presentation/blocs/watchlist/watchlist_bloc.dart';
 import 'package:ditonton/presentation/widgets/item_card.dart';
 import 'package:ditonton/utils/route/route_observer_helper.dart';
@@ -72,9 +73,19 @@ class _WatchlistPageState extends State<WatchlistPage> with RouteAware {
                 child: Text(state.message),
               );
             } else if (state is WatchlistNoData) {
-              return Center(child: Text(state.message));
+              return Center(
+                child: Text(
+                  "Watchlist anda masih kosong",
+                  style: kHeading6,
+                ),
+              );
             } else {
-              return const Center(child: Text('Failed'));
+              return Center(
+                child: Text(
+                  'Failed',
+                  style: kHeading6,
+                ),
+              );
             }
           }),
         ),

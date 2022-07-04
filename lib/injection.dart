@@ -2,7 +2,6 @@ import 'package:ditonton/data/repositories/movie_repository_impl.dart';
 import 'package:ditonton/data/repositories/tv_repository_impl.dart';
 import 'package:ditonton/data/repositories/watchlist_repository_impl.dart';
 import 'package:ditonton/data/services/database_service.dart';
-import 'package:ditonton/data/services/firebase_analytics.dart';
 import 'package:ditonton/data/sources/movie_remote_data_source.dart';
 import 'package:ditonton/data/sources/tv_remote_data_source.dart';
 import 'package:ditonton/data/sources/watchlist_local_data_source.dart';
@@ -92,14 +91,19 @@ Future<void> init() async {
 
   /// Initialize for Services
   getIt.registerLazySingleton<DatabaseService>(() => DatabaseService());
-  getIt.registerLazySingleton<AnalyticsService>(() => AnalyticsService());
 
   /// Initialize for Data sources
   getIt.registerLazySingleton<MovieRemoteDataSource>(
-    () => MovieRemoteDataSource(httpClient: getIt()),
+    () => MovieRemoteDataSource(
+      httpClient: getIt(),
+      ioClient: getIt(),
+    ),
   );
   getIt.registerLazySingleton<TvRemoteDataSource>(
-    () => TvRemoteDataSource(httpClient: getIt()),
+    () => TvRemoteDataSource(
+      httpClient: getIt(),
+      ioClient: getIt(),
+    ),
   );
   getIt.registerLazySingleton<WatchlistLocalDataSource>(
     () => WatchlistLocalDataSourceImpl(getIt()),
