@@ -22,6 +22,7 @@ import 'package:ditonton/presentation/blocs/tv_popular/tv_popular_bloc.dart';
 import 'package:ditonton/presentation/blocs/tv_recommendation/tv_recommendation_bloc.dart';
 import 'package:ditonton/presentation/blocs/tv_search/tv_search_bloc.dart';
 import 'package:ditonton/presentation/blocs/tv_top_rated/tv_top_rated_bloc.dart';
+import 'package:http/io_client.dart';
 import 'package:mockito/annotations.dart';
 import 'package:http/http.dart' as http;
 import 'package:mockito/mockito.dart';
@@ -65,6 +66,7 @@ class MockTvSearchBloc extends Fake implements TvSearchBloc {}
   WatchlistRepository,
   WatchlistUsecase
 ], customMocks: [
-  MockSpec<http.Client>(as: #MockHttpClient)
+  MockSpec<http.Client>(as: #MockHttpClient),
+  MockSpec<IOClient>(as: #MockIOClient),
 ])
 void main() {}

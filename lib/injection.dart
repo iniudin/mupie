@@ -2,6 +2,7 @@ import 'package:ditonton/data/repositories/movie_repository_impl.dart';
 import 'package:ditonton/data/repositories/tv_repository_impl.dart';
 import 'package:ditonton/data/repositories/watchlist_repository_impl.dart';
 import 'package:ditonton/data/services/database_service.dart';
+import 'package:ditonton/data/services/firebase_analytics.dart';
 import 'package:ditonton/data/sources/movie_remote_data_source.dart';
 import 'package:ditonton/data/sources/tv_remote_data_source.dart';
 import 'package:ditonton/data/sources/watchlist_local_data_source.dart';
@@ -26,12 +27,16 @@ import 'package:ditonton/presentation/blocs/tv_recommendation/tv_recommendation_
 import 'package:ditonton/presentation/blocs/tv_search/tv_search_bloc.dart';
 import 'package:ditonton/presentation/blocs/tv_top_rated/tv_top_rated_bloc.dart';
 import 'package:ditonton/presentation/blocs/watchlist/watchlist_bloc.dart';
+import 'package:ditonton/utils/ssl/ssl_pinning.dart';
 import 'package:http/http.dart' as http;
 import 'package:get_it/get_it.dart';
+import 'package:http/io_client.dart';
 
 final getIt = GetIt.instance;
 
-void init() {
+Future<void> init() async {
+  IOClient ioClient = await SSLPinning.ioClient;
+
   getIt.registerFactory<MovieOnPlayingBloc>(
     () => MovieOnPlayingBloc(usecase: getIt()),
   );
@@ -87,13 +92,14 @@ void init() {
 
   /// Initialize for Services
   getIt.registerLazySingleton<DatabaseService>(() => DatabaseService());
+  getIt.registerLazySingleton<AnalyticsService>(() => AnalyticsService());
 
   /// Initialize for Data sources
   getIt.registerLazySingleton<MovieRemoteDataSource>(
-    () => MovieRemoteDataSource(),
+    () => MovieRemoteDataSource(httpClient: getIt()),
   );
   getIt.registerLazySingleton<TvRemoteDataSource>(
-    () => TvRemoteDataSource(),
+    () => TvRemoteDataSource(httpClient: getIt()),
   );
   getIt.registerLazySingleton<WatchlistLocalDataSource>(
     () => WatchlistLocalDataSourceImpl(getIt()),
@@ -135,5 +141,6 @@ void init() {
   );
 
   // external
-  getIt.registerLazySingleton(() => http.Client());
+  getIt.registerFactory<IOClient>(() => ioClient);
+  getIt.registerFactory<http.Client>(() => http.Client());
 }
